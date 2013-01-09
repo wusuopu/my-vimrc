@@ -110,6 +110,9 @@ Bundle 'yuratomo/w3m.vim'
 Bundle 'tpope/vim-surround'
 "	vim 中文输入法
 Bundle 'vimim/vimim'
+"	vim 中文文档
+Bundle 'vimcdoc.svn'
+
 
 filetype plugin indent on
 "    安装所设置插件
@@ -174,11 +177,11 @@ let g:proj_flags='istcFLnSTv'
 
 
 set wildmenu             " 显示补全菜单
-set wildignore='*.pyc'   " 全局不显示的文件类项
+set wildignore='*.pyo'   " 全局不显示的文件类项
 " NERDTree 设置
 let g:NERDTreeShowHidden=1 " 显示隐藏文件
 let g:NERDTreeWinPos="left"
-let g:NERDTreeIgnore=['\~$']
+let g:NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$', '\.bak$']
 let g:NERDTreeQuitOnOpen=1 " 打开文件后关闭
 
 
@@ -234,10 +237,10 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
-nmap <C-J> <C-w>J
-nmap <C-K> <C-w>K
-nmap <C-H> <C-w>H
-nmap <C-L> <C-w>L
+"nmap <C-J> <C-w>J
+"nmap <C-K> <C-w>K
+"nmap <C-H> <C-w>H
+"nmap <C-L> <C-w>L
 imap <C-j> <ESC>j
 imap <C-k> <ESC>k
 imap <C-h> <ESC>h

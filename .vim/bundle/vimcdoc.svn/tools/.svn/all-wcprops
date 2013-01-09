@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/vimcdoc/!svn/ver/200/trunk/tools
+END
+testtags.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/vimcdoc/!svn/ver/127/trunk/tools/testtags.py
+END
+svnchanges.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/vimcdoc/!svn/ver/133/trunk/tools/svnchanges.sh
+END
+gb2utf
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/127/trunk/tools/gb2utf
+END
+html2lex.patch
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/vimcdoc/!svn/ver/200/trunk/tools/html2lex.patch
+END
+changes.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/127/trunk/tools/changes.py
+END
+html2lex.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/200/trunk/tools/html2lex.c
+END
+tagscngen.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/vimcdoc/!svn/ver/127/trunk/tools/tagscngen.py
+END
+formatmb.vim
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/vimcdoc/!svn/ver/127/trunk/tools/formatmb.vim
+END
+main.aap
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/200/trunk/tools/main.aap
+END

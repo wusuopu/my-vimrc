@@ -1,0 +1,821 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svnroot/vimcdoc/!svn/ver/205/trunk/doc
+END
+if_lua.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/if_lua.txt
+END
+howto.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/howto.txt
+END
+os_mac.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/os_mac.txt
+END
+visual.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/visual.txt
+END
+insert.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/insert.txt
+END
+version4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/version4.txt
+END
+usr_10.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_10.txt
+END
+version6.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/version6.txt
+END
+usr_12.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_12.txt
+END
+hebrew.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/hebrew.txt
+END
+gui_x11.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/gui_x11.txt
+END
+gui_w32.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/gui_w32.txt
+END
+mbyte.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/mbyte.txt
+END
+usr_90.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_90.txt
+END
+editing.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/editing.txt
+END
+quickfix.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/quickfix.txt
+END
+russian.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/russian.txt
+END
+gui.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/gui.txt
+END
+os_dos.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/os_dos.txt
+END
+help.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/help.txt
+END
+remote.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/remote.txt
+END
+vim-stylesheet.css
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/vim-stylesheet.css
+END
+options.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/205/trunk/doc/options.txt
+END
+pi_paren.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/pi_paren.txt
+END
+scroll.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/scroll.txt
+END
+uganda.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/uganda.txt
+END
+if_ruby.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/if_ruby.txt
+END
+if_mzsch.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/if_mzsch.txt
+END
+if_pyth.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/if_pyth.txt
+END
+os_os2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/os_os2.txt
+END
+usr_21.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_21.txt
+END
+usr_23.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_23.txt
+END
+usr_25.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_25.txt
+END
+quotes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/quotes.txt
+END
+usr_27.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_27.txt
+END
+pi_spec.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/pi_spec.txt
+END
+usr_29.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_29.txt
+END
+autocmd.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/autocmd.txt
+END
+develop.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/develop.txt
+END
+if_tcl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/if_tcl.txt
+END
+pi_gzip.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/pi_gzip.txt
+END
+farsi.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/farsi.txt
+END
+usr_30.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_30.txt
+END
+workshop.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/workshop.txt
+END
+usr_32.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/usr_32.txt
+END
+filetype.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/filetype.txt
+END
+indent.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/indent.txt
+END
+os_msdos.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/os_msdos.txt
+END
+eval.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/eval.txt
+END
+various.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/various.txt
+END
+os_beos.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/195/trunk/doc/os_beos.txt
+END
+starting.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/starting.txt
+END
+batch
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/vimcdoc/!svn/ver/154/trunk/doc/batch
+END
+os_vms.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/os_vms.txt
+END
+vi_diff.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/vi_diff.txt
+END
+usr_02.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/usr_02.txt
+END
+usr_04.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_04.txt
+END
+os_390.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/os_390.txt
+END
+usr_41.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/204/trunk/doc/usr_41.txt
+END
+usr_06.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_06.txt
+END
+digraph.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/digraph.txt
+END
+usr_43.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_43.txt
+END
+usr_08.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_08.txt
+END
+usr_45.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_45.txt
+END
+rileft.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/195/trunk/doc/rileft.txt
+END
+if_cscop.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/if_cscop.txt
+END
+pi_zip.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/pi_zip.txt
+END
+windows.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/windows.txt
+END
+helphelp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/helphelp.txt
+END
+tabpage.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/tabpage.txt
+END
+motion.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/motion.txt
+END
+hangulin.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/hangulin.txt
+END
+quickref.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/quickref.txt
+END
+usr_11.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_11.txt
+END
+version5.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/version5.txt
+END
+version7.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/version7.txt
+END
+map.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/map.txt
+END
+pattern.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/pattern.txt
+END
+pi_vimball.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/pi_vimball.txt
+END
+usr_toc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/usr_toc.txt
+END
+os_unix.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/os_unix.txt
+END
+syntax.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/syntax.txt
+END
+intro.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/intro.txt
+END
+pi_getscript.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/pi_getscript.txt
+END
+if_ole.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/if_ole.txt
+END
+sign.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/sign.txt
+END
+sponsor.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/sponsor.txt
+END
+os_win32.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/os_win32.txt
+END
+todo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/todo.txt
+END
+usr_20.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_20.txt
+END
+cmdline.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/cmdline.txt
+END
+usr_22.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_22.txt
+END
+usr_24.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/usr_24.txt
+END
+ft_ada.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/ft_ada.txt
+END
+tips.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/tips.txt
+END
+os_amiga.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/195/trunk/doc/os_amiga.txt
+END
+usr_26.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/usr_26.txt
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/tags
+END
+arabic.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/arabic.txt
+END
+usr_28.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_28.txt
+END
+change.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/change.txt
+END
+vim2html.pl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/vim2html.pl
+END
+recover.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/recover.txt
+END
+undo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/undo.txt
+END
+main.aap
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/main.aap
+END
+os_qnx.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/os_qnx.txt
+END
+diff.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/diff.txt
+END
+usr_31.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_31.txt
+END
+spell.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/spell.txt
+END
+repeat.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/repeat.txt
+END
+if_perl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/if_perl.txt
+END
+gui_w16.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/gui_w16.txt
+END
+fold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/fold.txt
+END
+pi_netrw.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/pi_netrw.txt
+END
+print.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/print.txt
+END
+netbeans.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/netbeans.txt
+END
+os_risc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/os_risc.txt
+END
+term.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/term.txt
+END
+index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/index.txt
+END
+os_mint.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/os_mint.txt
+END
+usr_01.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/usr_01.txt
+END
+usr_03.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_03.txt
+END
+usr_40.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_40.txt
+END
+usr_05.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/usr_05.txt
+END
+usr_42.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_42.txt
+END
+pi_tar.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/pi_tar.txt
+END
+usr_07.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_07.txt
+END
+usr_44.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_44.txt
+END
+usr_09.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/usr_09.txt
+END
+if_sniff.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/194/trunk/doc/if_sniff.txt
+END
+message.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/message.txt
+END
+debugger.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vimcdoc/!svn/ver/198/trunk/doc/debugger.txt
+END
+debug.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/debug.txt
+END
+ft_sql.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vimcdoc/!svn/ver/200/trunk/doc/ft_sql.txt
+END
+tagsrch.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/tagsrch.txt
+END
+mlang.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/vimcdoc/!svn/ver/202/trunk/doc/mlang.txt
+END
