@@ -109,7 +109,7 @@ Bundle 'yuratomo/w3m.vim'
 "	快速删除/修改光标周围配对的括号
 Bundle 'tpope/vim-surround'
 "	vim 中文输入法
-Bundle 'vimim/vimim'
+"Bundle 'vimim/vimim'
 "	vim 中文文档
 Bundle 'vimcdoc.svn'
 
@@ -241,10 +241,10 @@ nmap <C-l> <C-w>l
 "nmap <C-K> <C-w>K
 "nmap <C-H> <C-w>H
 "nmap <C-L> <C-w>L
-imap <C-j> <ESC>j
-imap <C-k> <ESC>k
-imap <C-h> <ESC>h
-imap <C-l> <ESC>l
+"imap <C-j> <ESC>j
+"imap <C-k> <ESC>k
+"imap <C-h> <ESC>h
+"imap <C-l> <ESC>l
 
 cmap <C-a> <Home>
 cmap <C-e> <End>
