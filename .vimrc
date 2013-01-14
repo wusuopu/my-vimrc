@@ -112,7 +112,19 @@ Bundle 'tpope/vim-surround'
 "Bundle 'vimim/vimim'
 "	vim 中文文档
 Bundle 'vimcdoc.svn'
-
+"	自动补全括号
+Bundle 'Townk/vim-autoclose'
+"	Yank history navigation, <C-p>和<C-n>粘贴历史文字
+Bundle 'YankRing.vim'
+"	Gvim colorscheme
+Bundle 'Wombat'
+"	Terminal Vim with 256 colors colorscheme
+Bundle 'fisadev/fisa-vim-colorscheme'
+"	Python mode (indentation, doc, refactor, lints, code checking, motion and
+"	operators, highlighting, run and ipdb breakpoints)
+Bundle 'klen/python-mode'
+"	Python and PHP Debugger
+Bundle 'jabapyth/vim-debug'
 
 filetype plugin indent on
 "    安装所设置插件
@@ -257,17 +269,20 @@ vmap <C-x>c "+y
 nmap <C-x>c "+p
 nmap <C-n> <ESC>gt
 nmap <C-p> <ESC>gT
+nmap tt :tabnew<CR>
+nmap tn :tabn<CR>
+nmap tp :tabp<CR>
 imap <C-u> <ESC><C-u>
 imap <C-d> <ESC><C-d>
 imap <F2> cprt<Tab>
 nmap <F2> icprt<Tab><ESC>
 nmap <F8> :reg<CR>
-imap "<Space> ""<Left>
-imap (<Space> ()<Left>
-imap [<Space> []<Left>
-imap {<Space> {}<Left>
-imap '<Space> ''<Left>
-imap <<Space> <><Left>
+"imap "<Space> ""<Left>
+"imap (<Space> ()<Left>
+"imap [<Space> []<Left>
+"imap {<Space> {}<Left>
+"imap '<Space> ''<Left>
+"imap <<Space> <><Left>
 nmap f zr
 nmap F zm
 nmap <F3> za
