@@ -287,6 +287,9 @@ nmap <Leader>cn :cn<CR>   " vimgrep下一个结果
 nmap <Leader>cp :cp<CR>   " vimgrep上一个结果
 nmap <Leader>cw :cw<CR>   " 打开vimgrep quickfix窗口
 
+map <F6>hex :%!xxd<CR>      " Hex模式
+map <F6>unhex :%!xxd -r<CR> " 正常模式
+
 function! Move_block_down()
 	if line("'>") + 1 <= line("$")
 		'<,'>mo '>+1
