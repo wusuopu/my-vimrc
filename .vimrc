@@ -23,7 +23,12 @@ set cindent " C缩进
 set t_Co=256
 set go=
 set autoread " 文件外部更改时，自动读入
-color murphy " 颜色主题
+"color longchang " 颜色主题
+if has("gui_running")
+  colorscheme darkZ
+else
+  colorscheme candycode
+endif     " has 
 " 文件编码
 set encoding=utf8
 set fileencodings=utf8,gb2312,gb18030,ucs-bom,latin1
@@ -32,12 +37,13 @@ set cursorline
 "set cursorcolumn
 set autochdir  "自动切换目录
 " 颜色设置
-highlight CursorLine cterm=NONE ctermbg=darkgray
+"highlight CursorLine cterm=NONE ctermbg=black
 "highlight CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=#000000
 "highlight CursorLine guibg=#000000
 "highlight CursorColumn guibg=#000000
-highlight Folded guibg=grey30 guifg=gold  "折叠
-highlight FoldColumn guibg=grey30 guifg=tan  "折柱
+"highlight Folded guibg=grey30 guifg=gold  "折叠
+"highlight FoldColumn guibg=grey30 guifg=tan  "折柱
+"highlight ColorColumn cterm=NONE ctermbg=001
 set cc=81 " 81列处高亮
 set wrap
 set list
@@ -189,11 +195,12 @@ let g:proj_flags='istcFLnSTv'
 
 
 set wildmenu             " 显示补全菜单
-set wildignore='*.pyo'   " 全局不显示的文件类项
+"set wildignore='*.pyo'   
+let &wildignore=''       " 全局不显示的文件类项
 " NERDTree 设置
 let g:NERDTreeShowHidden=1 " 显示隐藏文件
 let g:NERDTreeWinPos="left"
-let g:NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$', '\.bak$']
+let g:NERDTreeIgnore=['\~$', '\.pyo$', '\.bak$']
 let g:NERDTreeQuitOnOpen=1 " 打开文件后关闭
 
 
@@ -204,6 +211,8 @@ au FileType python setlocal foldmethod=indent  "折叠pyton代码
 au BufNewFile,BufRead *.t2t set ft=txt2tags
 set foldlevel=10 "默认展开所有代码
 au FileType c setlocal tabstop=8 shiftwidth=8 softtabstop=8
+au FileType c filetype indent on " 打开自动缩进
+"au FileType c setlocal foldmethod=indent  "折叠pyton代码
 "au FileType c setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
@@ -289,6 +298,8 @@ nmap <Leader>cw :cw<CR>   " 打开vimgrep quickfix窗口
 
 map <F6>hex :%!xxd<CR>      " Hex模式
 map <F6>unhex :%!xxd -r<CR> " 正常模式
+map <F6>ig :let &wildignore='*.pyc'<CR>
+map <F6>unig :let &wildignore=''<CR>
 
 function! Move_block_down()
 	if line("'>") + 1 <= line("$")
