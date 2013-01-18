@@ -210,10 +210,9 @@ au FileType python setlocal foldmethod=indent  "折叠pyton代码
 " txt2tags高亮设置，http://www.vim.org/scripts/script.php?script_id=1157
 au BufNewFile,BufRead *.t2t set ft=txt2tags
 set foldlevel=10 "默认展开所有代码
-au FileType c setlocal tabstop=8 shiftwidth=8 softtabstop=8
+"au FileType c setlocal tabstop=8 shiftwidth=8 softtabstop=8
 au FileType c filetype indent on " 打开自动缩进
-"au FileType c setlocal foldmethod=indent  "折叠pyton代码
-"au FileType c setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au FileType c setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
