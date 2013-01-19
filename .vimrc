@@ -23,12 +23,6 @@ set cindent " C缩进
 set t_Co=256
 set go=
 set autoread " 文件外部更改时，自动读入
-"color longchang " 颜色主题
-if has("gui_running")
-  colorscheme darkZ
-else
-  colorscheme candycode
-endif     " has 
 " 文件编码
 set encoding=utf8
 set fileencodings=utf8,gb2312,gb18030,ucs-bom,latin1
@@ -45,8 +39,8 @@ set autochdir  "自动切换目录
 "highlight FoldColumn guibg=grey30 guifg=tan  "折柱
 "highlight ColorColumn cterm=NONE ctermbg=001
 set cc=81 " 81列处高亮
-set wrap
-set list
+set wrap  " 自动换行
+set list  " 把制表符显示为^I ,用$标示行尾（使用list分辨尾部的字符是tab还是空格）
 "set listchars=tab:>-,trail:-
 set listchars=tab:>-
 set backspace=indent,eol,start   "设置backspace删除
@@ -115,23 +109,44 @@ Bundle 'yuratomo/w3m.vim'
 "	快速删除/修改光标周围配对的括号
 Bundle 'tpope/vim-surround'
 "	vim 中文输入法
-"Bundle 'vimim/vimim'
+Bundle 'vimim/vimim'
 "	vim 中文文档
 Bundle 'vimcdoc.svn'
 "	自动补全括号
 "Bundle 'Townk/vim-autoclose'
 "	Yank history navigation, <C-p>和<C-n>粘贴历史文字
 "Bundle 'YankRing.vim'
-"	Gvim colorscheme
-Bundle 'Wombat'
-"	Terminal Vim with 256 colors colorscheme
-Bundle 'fisadev/fisa-vim-colorscheme'
 "	Python mode (indentation, doc, refactor, lints, code checking, motion and
 "	operators, highlighting, run and ipdb breakpoints)
 "Bundle 'klen/python-mode'
 "	Python and PHP Debugger
 "Bundle 'jabapyth/vim-debug'
 
+"	Gvim colorscheme
+Bundle 'Wombat'
+"	Terminal Vim with 256 colors colorscheme
+Bundle 'fisadev/fisa-vim-colorscheme'
+"	Color Scheme Explorer
+Bundle 'csExplorer'
+"	一些颜色主题
+Bundle 'ColorSamplerPack'
+"	自动注释
+Bundle 'DoxygenToolkit'
+"	项目管理
+Bundle 'project'
+Bundle 'matchit'
+Bundle 'python_fold'
+
+"	我的插件
+Bundle 'myyoudao_dict'
+Bundle 'myweibo'
+
+"color longchang " 颜色主题
+if has("gui_running")
+  colorscheme darkZ
+else
+  colorscheme candycode
+endif     " has 
 filetype plugin indent on
 "    安装所设置插件
 "    安装：BundleInstall，更新：BundleInstall!，卸载不在列表的插件：BundleClean
@@ -205,13 +220,14 @@ let g:NERDTreeQuitOnOpen=1 " 打开文件后关闭
 
 
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
-au FileType python filetype indent on " 打开自动缩进
-au FileType python setlocal foldmethod=indent  "折叠pyton代码
+au FileType python filetype indent on           " 打开自动缩进
+au FileType python setlocal foldmethod=indent   "折叠pyton代码
 " txt2tags高亮设置，http://www.vim.org/scripts/script.php?script_id=1157
 au BufNewFile,BufRead *.t2t set ft=txt2tags
 set foldlevel=10 "默认展开所有代码
 "au FileType c setlocal tabstop=8 shiftwidth=8 softtabstop=8
-au FileType c filetype indent on " 打开自动缩进
+au FileType c filetype indent on                " 打开自动缩进
+au FileType c setlocal foldmethod=syntax   "折叠pyton代码
 au FileType c setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
