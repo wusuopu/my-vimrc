@@ -30,14 +30,6 @@ set laststatus=2 " 总是显示状态栏
 set cursorline
 "set cursorcolumn
 set autochdir  "自动切换目录
-" 颜色设置
-"highlight CursorLine cterm=NONE ctermbg=black
-"highlight CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=#000000
-"highlight CursorLine guibg=#000000
-"highlight CursorColumn guibg=#000000
-"highlight Folded guibg=grey30 guifg=gold  "折叠
-"highlight FoldColumn guibg=grey30 guifg=tan  "折柱
-"highlight ColorColumn cterm=NONE ctermbg=001
 set cc=81 " 81列处高亮
 set wrap  " 自动换行
 set list  " 把制表符显示为^I ,用$标示行尾（使用list分辨尾部的字符是tab还是空格）
@@ -145,8 +137,21 @@ Bundle 'myweibo'
 if has("gui_running")
   colorscheme darkZ
 else
-  colorscheme candycode
+  "colorscheme candycode
+  "colorscheme herald
+  "colorscheme sorcerer
+  "colorscheme zendnb
+  colorscheme longchang
 endif     " has 
+" 颜色设置
+"highlight CursorLine cterm=NONE ctermbg=black
+"highlight CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=#000000
+"highlight CursorLine guibg=#000000
+"highlight CursorColumn guibg=#000000
+"highlight Folded guibg=grey30 guifg=gold  "折叠
+"highlight FoldColumn guibg=grey30 guifg=tan  "折柱
+"highlight ColorColumn cterm=NONE ctermbg=001
+
 filetype plugin indent on
 "    安装所设置插件
 "    安装：BundleInstall，更新：BundleInstall!，卸载不在列表的插件：BundleClean
