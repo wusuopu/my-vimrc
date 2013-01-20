@@ -131,7 +131,7 @@ Bundle 'python_fold'
 
 "	我的插件
 Bundle 'myyoudao_dict'
-Bundle 'myweibo'
+"Bundle 'myweibo'
 
 "color longchang " 颜色主题
 if has("gui_running")
@@ -172,13 +172,13 @@ filetype plugin indent on
 "let g:miniBufExplModSelTarget = 1 
 
 " vim 中文输入法 http://www.vim.org/scripts/script.php?script_id=2506 vimim.vim
-let g:vimim_cloud = 'sogou,baidu,qq'  
+"let g:vimim_cloud = 'sogou,baidu,qq'  
 let g:vimim_map = 'tab_as_gi'  
 let g:vimim_mode = 'dynamic'  
 let g:vimim_mycloud = 0  
 let g:vimim_punctuation = 2  
 let g:vimim_shuangpin = 0  
-let g:vimim_toggle = 'pinyin,sogou' 
+"let g:vimim_toggle = 'pinyin,sogou' 
 
 " DoxygenToolkit 自动生成注释 http://www.vim.org/scripts/script.php?script_id=987
 let g:DoxygenToolkit_authorName="Long Changjin <admin@longchangjin.cn>"
@@ -215,7 +215,6 @@ let g:proj_flags='istcFLnSTv'
 
 
 set wildmenu             " 显示补全菜单
-"set wildignore='*.pyo'   
 let &wildignore=''       " 全局不显示的文件类项
 " NERDTree 设置
 let g:NERDTreeShowHidden=1 " 显示隐藏文件
@@ -227,6 +226,7 @@ let g:NERDTreeQuitOnOpen=1 " 打开文件后关闭
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType python filetype indent on           " 打开自动缩进
 au FileType python setlocal foldmethod=indent   "折叠pyton代码
+au FileType python let &wildignore='*.pyo'
 " txt2tags高亮设置，http://www.vim.org/scripts/script.php?script_id=1157
 au BufNewFile,BufRead *.t2t set ft=txt2tags
 set foldlevel=10 "默认展开所有代码
