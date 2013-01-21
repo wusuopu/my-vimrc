@@ -336,3 +336,49 @@ endfunction
 "vmap <C-e> :call Move_block_down()<CR>
 "vmap <C-y> :call Move_block_up()<CR>
 
+
+set showtabline=2  " 0, 1 or 2; when to use a tab pages line
+"set tabline=%!MyTabLine()  " custom tab pages line
+
+function! MyTabLine()
+  let s = ''
+  let t = tabpagenr()
+  let i = 1
+  while i <= tabpagenr('$')
+    let buflist = tabpagebuflist(i)
+    let winnr = tabpagewinnr(i)
+    let s .= '%' . i . 'T'
+    let s .= (i == t ? '%#TabLineSel#' : '%#TabLine#')
+    let bufnr = buflist[winnr - 1]
+    let file = bufname(bufnr)
+    let buftype = getbufvar(bufnr, 'buftype')
+    if buftype == 'nofile'
+      if file =~ '\/.'
+        let file = substitute(file, '.*\/\ze.', '', '')
+      endif
+    else
+      let file = fnamemodify(file, ':p:t')
+    endif
+    if file == ''
+      let file = '[No Name]'
+    endif
+    let s .= string(i) . ":"
+    let file = strpart(file, 0, 10)
+    let s .= file
+    let i = i + 1
+  endwhile
+  let s .= '%T%#TabLineFill#%='
+  let s .= (tabpagenr('$') > 1 ? '%999XX' : 'X')
+  return s
+endfunction
+
+map <leader>1 1gt
+map <leader>2 2gt
+map <leader>3 3gt
+map <leader>4 4gt
+map <leader>5 5gt
+map <leader>6 6gt
+map <leader>7 7gt
+map <leader>8 8gt
+map <leader>9 9gt
+map <leader>0 10gt
