@@ -129,6 +129,9 @@ Bundle 'project'
 Bundle 'matchit'
 Bundle 'python_fold'
 
+"	lisp开发插件
+Bundle 'slimv099'
+
 "	我的插件
 Bundle 'myyoudao_dict'
 "Bundle 'myweibo'
