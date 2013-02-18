@@ -128,6 +128,7 @@ Bundle 'DoxygenToolkit'
 Bundle 'project'
 Bundle 'matchit'
 Bundle 'python_fold'
+Bundle 'vim-instant-markdown-py'
 
 "	lisp开发插件
 Bundle 'slimv099'
