@@ -97,7 +97,7 @@ Bundle 'snipMate'
 "	vim git 管理
 Bundle 'motemen/git-vim'
 "	vim w3m
-Bundle 'yuratomo/w3m.vim'
+"Bundle 'yuratomo/w3m.vim'
 "	快速删除/修改光标周围配对的括号
 Bundle 'tpope/vim-surround'
 "	vim 中文输入法
@@ -248,6 +248,7 @@ au FileType c setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 "nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 noremap <F4> :NERDTreeToggle<CR>
+noremap <F6> :TagbarToggle<CR>
 noremap <C-F4> :TagbarToggle<CR>
 
 "AutoComplPop设置
