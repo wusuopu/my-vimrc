@@ -128,13 +128,13 @@ Bundle 'DoxygenToolkit'
 Bundle 'project'
 Bundle 'matchit'
 Bundle 'python_fold'
-Bundle 'vim-instant-markdown-py'
+"Bundle 'vim-instant-markdown-py'
 
 "	lisp开发插件
 Bundle 'slimv099'
 
 "	我的插件
-Bundle 'myyoudao_dict'
+"Bundle 'myyoudao_dict'
 "Bundle 'myweibo'
 
 "color longchang " 颜色主题
