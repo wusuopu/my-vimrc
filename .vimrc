@@ -320,27 +320,12 @@ nmap <F3> za
 nmap <Leader>cn :cn<CR>   " vimgrep下一个结果
 nmap <Leader>cp :cp<CR>   " vimgrep上一个结果
 nmap <Leader>cw :cw<CR>   " 打开vimgrep quickfix窗口
+nmap <Leader>lw :lw<CR>   " 打开lvimgrep 当前窗口
 
 map <F6>hex :%!xxd<CR>      " Hex模式
 map <F6>unhex :%!xxd -r<CR> " 正常模式
 map <F6>ig :let &wildignore='*.pyc'<CR>
 map <F6>unig :let &wildignore=''<CR>
-
-"function! Move_block_down()
-	"if line("'>") + 1 <= line("$")
-		"'<,'>mo '>+1
-	"endif
-"endfunction
-"function! Move_block_up()
-	"if line("'<") - 1 >= 0
-		"'<,'>mo '<-1
-	"endif
-"endfunction
-"vmap <C-e> :mo '>+1<CR>gv
-"vmap <C-y> :mo '<+'<-'>-1<CR>gv
-"vmap <C-e> :call Move_block_down()<CR>
-"vmap <C-y> :call Move_block_up()<CR>
-
 
 function! MoveBlockUp() range
     call MoveBlock(a:firstline, a:lastline, a:firstline-2)
@@ -360,14 +345,14 @@ endfunction
 vnoremap <silent> <c-s-k> :call MoveBlockUp()<CR>
 vnoremap <silent> <c-s-j> :call MoveBlockDown()<CR>
 
-" Moving one line
-nnoremap <silent> <c-s-j> :m+1<CR>
-nnoremap <silent> <c-s-k> :m-2<CR>
-inoremap <silent> <c-s-j> <ESC>:m+1<CR>gi
-inoremap <silent> <c-s-k> <ESC>:m-2<CR>gi
+"" Moving one line
+"nnoremap <silent> <c-s-j> :m+1<CR>
+"nnoremap <silent> <c-s-k> :m-2<CR>
+"inoremap <silent> <c-s-j> <ESC>:m+1<CR>gi
+"inoremap <silent> <c-s-k> <ESC>:m-2<CR>gi
 
-" Add empty line of above and bellow of one line
-noremap <silent> <c-s-o> O<ESC>jo<ESC>k
+"" Add empty line of above and bellow of one line
+"noremap <silent> <c-s-o> O<ESC>jo<ESC>k
 
 
 set showtabline=2  " 0, 1 or 2; when to use a tab pages line
