@@ -132,6 +132,8 @@ Bundle 'python_fold'
 
 "	lisp开发插件
 Bundle 'slimv099'
+"	Ack-grep插件。需要先安裝ack-grep
+Bundle 'mileszs/ack.vim'
 
 "	我的插件
 "Bundle 'myyoudao_dict'
