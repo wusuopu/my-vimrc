@@ -135,7 +135,7 @@ Bundle 'slimv099'
 "	Ack-grep插件。需要先安裝ack-grep
 Bundle 'mileszs/ack.vim'
 "	html/css插件
-Bundle 'mattn/zencoding-vim'
+" Bundle 'mattn/zencoding-vim'
 
 "	我的插件
 "Bundle 'myyoudao_dict'
@@ -230,7 +230,6 @@ let g:NERDTreeWinPos="left"
 let g:NERDTreeIgnore=['\~$', '\.pyo$', '\.bak$']
 let g:NERDTreeQuitOnOpen=1 " 打开文件后关闭
 
-
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType python filetype indent on           " 打开自动缩进
 au FileType python setlocal foldmethod=indent   "折叠pyton代码
@@ -312,6 +311,9 @@ imap <C-d> <ESC><C-d>
 imap <F2> cprt<Tab>
 nmap <F2> icprt<Tab><ESC>
 nmap <F8> :reg<CR>
+nmap <F9>on :setlocal spell spelllang=en_us<CR>
+nmap <F9>off :setlocal nospell<CR>
+
 imap "<Space> ""<Left>
 imap (<Space> ()<Left>
 imap [<Space> []<Left>
@@ -361,6 +363,7 @@ vnoremap <silent> <c-s-j> :call MoveBlockDown()<CR>
 
 set showtabline=2  " 0, 1 or 2; when to use a tab pages line
 "set tabline=%!MyTabLine()  " custom tab pages line
+
 
 function! MyTabLine()
   let s = ''
