@@ -266,7 +266,13 @@ let g:syntastic_check_on_open=1
 let g:syntastic_quiet_warning=0
 let g:syntastic_enable_signs=1
 let g:syntastic_enable_highlighting=0
-let g:syntastic_python_checker_args='--ignore=E501,E302,E231,E261,E201,W402,W293,W291,E225,E203,E226'
+
+" E128 continuation line under-indented for visual indent
+" E261 at least two spaces before inline comment
+" E302 expected 2 blank lines, found 1
+" E501 line too long (91 > 79 characters)
+" W402 imported but unused
+"let g:syntastic_python_checker_args='--ignore=E501,E302,E231,E261,E201,W293,W291,E225,E203,E226'
 nmap cs :SyntasticCheck<CR>
 "nmap <F2> :Errors<CR>
 
