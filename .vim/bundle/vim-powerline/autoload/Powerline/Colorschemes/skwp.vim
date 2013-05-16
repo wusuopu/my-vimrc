@@ -116,6 +116,12 @@ let g:Powerline#Colorschemes#skwp#colorscheme = Pl#Colorscheme#Init([
 		\ 'i': ['darkestcyan', 'mediumcyan', ['bold']],
 		\ }),
 	\
+	\ Pl#Hi#Segments(['lc_datetime'], {
+		\ 'n': ['gray2', 'gray10', ['bold']],
+		\ 'N': ['gray7', 'gray1', ['bold']],
+		\ 'i': ['darkestcyan', 'mediumcyan', ['bold']],
+		\ }),
+	\
 	\ Pl#Hi#Segments(['errors'], {
 		\ 'n': ['orange', 'base02', ['bold']],
 		\ 'N': ['gray5', 'base03', ['bold']],

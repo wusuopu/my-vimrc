@@ -27,6 +27,10 @@ set autoread " 文件外部更改时，自动读入
 set encoding=utf8
 set fileencodings=utf8,gb2312,gb18030,ucs-bom,latin1
 set laststatus=2 " 总是显示状态栏
+"set statusline=%1*%-52F\ %2*\ %{&ff=='unix'?'\\n':(&ff=='mac'?'\\r':'\\r\\n')}\ %3*\ %{&fenc!=''?&fenc:&enc}\ %1*\ %Y\ %4*\ %04l/%03c\ %2*\ 0x%04.4B\ %1*\ %-16{strftime(\"%Y-%m-%d\ %H:%M\")}\ %5*\ %-3m\ 
+"set statusline=%<%F%1*%m%*%r%y%=%b\ 0x%B\ \ [l,c]%l,%c%V\ %p%%\ 
+"hi User1 term=inverse,bold cterm=inverse,bold ctermfg=red
+
 set cursorline
 "set cursorcolumn
 set autochdir  "自动切换目录

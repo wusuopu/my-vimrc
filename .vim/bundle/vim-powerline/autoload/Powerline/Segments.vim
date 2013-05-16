@@ -27,4 +27,5 @@ let g:Powerline#Segments#segments = Pl#Segment#Init([
 	\ Pl#Segment#Create('charcode'        , '%{Powerline#Functions#GetCharCode()}', Pl#Segment#Modes('!N')),
 	\ Pl#Segment#Create('currhigroup'     , '%{synIDattr(synID(line("."), col("."), 1), "name")}', Pl#Segment#Modes('!N')),
 	\ Pl#Segment#Create('ws_marker'       , '%{Powerline#Functions#GetWSMarker()}', Pl#Segment#Modes('!N')),
+	\ Pl#Segment#Create('lc_datetime'     , '%-16{strftime("%Y-%m-%d %H:%M")}', Pl#Segment#Modes('!N')),
 \ ])

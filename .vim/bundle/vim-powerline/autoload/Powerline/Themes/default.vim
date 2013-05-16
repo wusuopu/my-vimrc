@@ -16,6 +16,7 @@ let g:Powerline#Themes#default#theme = Pl#Theme#Create(
 		\ , 'filetype'
 		\ , 'scrollpercent'
 		\ , 'lineinfo'
+		\ , 'lc_datetime'
 	\ ),
 	\
 	\ Pl#Theme#Buffer('command_t'
