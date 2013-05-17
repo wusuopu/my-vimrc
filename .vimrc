@@ -57,7 +57,7 @@ Bundle 'gmarik/vundle'
 
 "	需要先安装flake8
 "	easy_install flake8
-Bundle 'vim-flake8'
+"Bundle 'vim-flake8'
 "	使用vim-syntastic需要flake8
 Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/vim-powerline'
@@ -95,7 +95,7 @@ Bundle 'AutoComplPop'
 Bundle 'majutsushi/tagbar'
 "Bundle 'winmanager'
 "	在vim中运行shell
-" Bundle 'Conque-Shell'
+Bundle 'Conque-Shell'
 "	快速插入内容
 Bundle 'snipMate'
 "	vim git 管理
@@ -132,6 +132,7 @@ Bundle 'DoxygenToolkit'
 Bundle 'project'
 Bundle 'matchit'
 Bundle 'python_fold'
+"	markdown实时预览
 "Bundle 'vim-instant-markdown-py'
 
 "	lisp开发插件
@@ -139,7 +140,7 @@ Bundle 'slimv099'
 "	Ack-grep插件。需要先安裝ack-grep
 Bundle 'mileszs/ack.vim'
 "	html/css插件
-" Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/zencoding-vim'
 
 "	我的插件
 "Bundle 'myyoudao_dict'
@@ -245,6 +246,9 @@ set foldlevel=10 "默认展开所有代码
 au FileType c filetype indent on                " 打开自动缩进
 au FileType c setlocal foldmethod=syntax   "折叠pyton代码
 au FileType c setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au FileType cpp filetype indent on                " 打开自动缩进
+au FileType cpp setlocal foldmethod=syntax   "折叠pyton代码
+au FileType cpp setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
@@ -278,7 +282,7 @@ let g:syntastic_enable_highlighting=0
 " W402 imported but unused
 "let g:syntastic_python_checker_args='--ignore=E501,E302,E231,E261,E201,W293,W291,E225,E203,E226'
 nmap cs :SyntasticCheck<CR>
-"nmap <F2> :Errors<CR>
+nmap <F7> :Errors<CR>
 
 "窗口操作
 map <C-F3> :split<CR>  		"横向分割窗口
