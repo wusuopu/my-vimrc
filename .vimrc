@@ -141,6 +141,8 @@ Bundle 'slimv099'
 Bundle 'mileszs/ack.vim'
 "	html/css插件
 Bundle 'mattn/zencoding-vim'
+"	buffer浏览
+"Bundle 'fholgado/minibufexpl.vim'
 
 "	我的插件
 "Bundle 'myyoudao_dict'
