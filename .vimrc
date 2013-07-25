@@ -83,6 +83,7 @@ Bundle 'python.vim'
 "Bundle 'python_fn.vim'
 "	文件浏览器，NerdTree命令
 Bundle 'The-NERD-tree'
+"	很强大的文件浏览器,VE命令
 Bundle 'VimExplorer'
 "Bundle 'lookupfile'
 Bundle 'genutils'
@@ -143,6 +144,11 @@ Bundle 'mileszs/ack.vim'
 Bundle 'mattn/zencoding-vim'
 "	buffer浏览
 "Bundle 'fholgado/minibufexpl.vim'
+"	多人协作
+"	pip install twisted
+"Bundle 'CoVim'
+"	多光标
+"Bundle 'vim-multiple-cursors'
 
 "	我的插件
 "Bundle 'myyoudao_dict'
@@ -262,6 +268,7 @@ au FileType cpp setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 "nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 noremap <F4> :NERDTreeToggle<CR>
+"noremap <F4> :VE<CR><CR>
 noremap <F6> :TagbarToggle<CR>
 noremap <C-F4> :TagbarToggle<CR>
 
