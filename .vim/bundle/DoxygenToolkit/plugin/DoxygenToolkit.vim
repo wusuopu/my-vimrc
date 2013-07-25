@@ -275,8 +275,7 @@ let s:licenseTag = s:licenseTag . "but WITHOUT ANY WARRANTY; without even the im
 let s:licenseTag = s:licenseTag . "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\<enter>"
 let s:licenseTag = s:licenseTag . "GNU General Public License for more details.\<enter>\<enter>"
 let s:licenseTag = s:licenseTag . "You should have received a copy of the GNU General Public License\<enter>"
-let s:licenseTag = s:licenseTag . "along with this program; if not, write to the Free Software\<enter>"
-let s:licenseTag = s:licenseTag . "Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.\<enter>"
+let s:licenseTag = s:licenseTag . "along with this program; If not, see <http://www.gnu.org/licenses/>.\<enter>\<enter>"
 
 " Common standard constants
 if !exists("g:DoxygenToolkit_briefTag_pre")
