@@ -96,17 +96,19 @@ Bundle 'AutoComplPop'
 Bundle 'majutsushi/tagbar'
 "Bundle 'winmanager'
 "	在vim中运行shell
-Bundle 'Conque-Shell'
+"Bundle 'Conque-Shell'
 "	快速插入内容
 Bundle 'snipMate'
 "	vim git 管理
-Bundle 'motemen/git-vim'
+"Bundle 'motemen/git-vim'
+"	强大的git工具
+Bundle 'tpope/vim-fugitive'
 "	vim w3m
 "Bundle 'yuratomo/w3m.vim'
 "	快速删除/修改光标周围配对的括号
 Bundle 'tpope/vim-surround'
 "	vim 中文输入法
-Bundle 'vimim/vimim'
+"Bundle 'vimim/vimim'
 "	vim 中文文档
 Bundle 'vimcdoc.svn'
 "	自动补全括号
@@ -290,8 +292,13 @@ let g:syntastic_enable_highlighting=0
 " E501 line too long (91 > 79 characters)
 " W402 imported but unused
 "let g:syntastic_python_checker_args='--ignore=E501,E302,E231,E261,E201,W293,W291,E225,E203,E226'
+" W291 trailing whitespace
+let g:syntastic_python_checker_args='--ignore=W291'
 nmap cs :SyntasticCheck<CR>
 nmap <F7> :Errors<CR>
+
+" zencoding设置
+let g:user_zen_leader_key = '<c-x>'
 
 "窗口操作
 map <C-F3> :split<CR>  		"横向分割窗口
@@ -326,7 +333,7 @@ nmap <C-x>c "+p
 map <C-x>q :qa<CR>
 nmap <C-n> <ESC>gt
 nmap <C-p> <ESC>gT
-nmap tt :tabnew<CR>
+nmap tt :tabedit .<CR>
 nmap tn :tabn<CR>
 nmap tp :tabp<CR>
 imap <C-u> <ESC><C-u>
