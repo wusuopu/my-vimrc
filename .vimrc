@@ -146,11 +146,15 @@ Bundle 'mileszs/ack.vim'
 Bundle 'mattn/zencoding-vim'
 "	buffer浏览
 "Bundle 'fholgado/minibufexpl.vim'
+"	另一个buffer浏览
+Bundle 'vim-scripts/bufexplorer.zip'
 "	多人协作
 "	pip install twisted
 "Bundle 'CoVim'
 "	多光标
 "Bundle 'vim-multiple-cursors'
+"	对齐线
+Bundle 'nathanaelkane/vim-indent-guides'
 
 "	我的插件
 "Bundle 'myyoudao_dict'
@@ -300,6 +304,12 @@ nmap <F7> :Errors<CR>
 " zencoding设置
 let g:user_zen_leader_key = '<c-x>'
 
+" indent-guides设置
+let g:indent_guides_guide_size=1
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=darkgrey
+
+
 "窗口操作
 map <C-F3> :split<CR>  		"横向分割窗口
 map <S-F3> :vsplit<CR>		"坚向侵害窗口
@@ -437,3 +447,15 @@ map <leader>7 7gt
 map <leader>8 8gt
 map <leader>9 9gt
 map <leader>0 10gt
+
+" 设置参考线
+map ,ch :call SetColorColumn()<CR>
+function! SetColorColumn()
+    let col_num = virtcol(".")
+    let cc_list = split(&cc, ',')
+    if count(cc_list, string(col_num)) <= 0
+        execute "set cc+=".col_num
+    else
+        execute "set cc-=".col_num
+    endif
+endfunction
