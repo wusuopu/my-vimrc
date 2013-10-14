@@ -185,6 +185,9 @@ filetype plugin indent on
 "    au VimEnter * BundleInstall
 "vundle设置 end---------------------------------------------------------------
 
+" PowerLine
+let g:Powerline_stl_path_style='full'
+
 "    python_editing.vim http://www.vim.org/scripts/script.php?script_id=1494
 "    matchit: %加强，可以匹配HTML, LaTeX等 http://www.vim.org/scripts/script.php?script_id=39
 "    python代码折叠 F键,保存在vim/ftplugin
@@ -197,6 +200,10 @@ filetype plugin indent on
 "let g:miniBufExplMapWindowNavArrows = 1 
 "let g:miniBufExplMapCTabSwitchBufs = 1 
 "let g:miniBufExplModSelTarget = 1 
+
+" bufexplorer
+let g:bufExplorerSortBy='fullpath'
+let g:bufExplorerSplitOutPathName=0
 
 " vim 中文输入法 http://www.vim.org/scripts/script.php?script_id=2506 vimim.vim
 "let g:vimim_cloud = 'sogou,baidu,qq'  
@@ -249,6 +256,9 @@ let g:NERDTreeWinPos="left"
 let g:NERDTreeIgnore=['\~$', '\.pyo$', '\.bak$']
 let g:NERDTreeQuitOnOpen=1 " 打开文件后关闭
 
+set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+set foldmethod=indent
+
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType python filetype indent on           " 打开自动缩进
 au FileType python setlocal foldmethod=indent   "折叠pyton代码
@@ -258,11 +268,14 @@ au BufNewFile,BufRead *.t2t set ft=txt2tags
 set foldlevel=10 "默认展开所有代码
 "au FileType c setlocal tabstop=8 shiftwidth=8 softtabstop=8
 au FileType c filetype indent on                " 打开自动缩进
-au FileType c setlocal foldmethod=syntax   "折叠pyton代码
+au FileType c setlocal foldmethod=syntax   "折叠C代码
 au FileType c setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType cpp filetype indent on                " 打开自动缩进
-au FileType cpp setlocal foldmethod=syntax   "折叠pyton代码
+au FileType cpp setlocal foldmethod=syntax   "折叠C代码
 au FileType cpp setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au FileType javascript setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType javascript filetype indent on           " 打开自动缩进
+au FileType javascript setlocal foldmethod=indent   "折叠代码
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
@@ -348,18 +361,20 @@ nmap tn :tabn<CR>
 nmap tp :tabp<CR>
 imap <C-u> <ESC><C-u>
 imap <C-d> <ESC><C-d>
+imap <C-b> <ESC>i
+imap <C-f> <ESC>la
 imap <F2> cprt<Tab>
 nmap <F2> icprt<Tab><ESC>
 nmap <F8> :reg<CR>
 nmap <F9>on :setlocal spell spelllang=en_us<CR>
 nmap <F9>off :setlocal nospell<CR>
 
-imap "<Space> ""<Left>
-imap (<Space> ()<Left>
-imap [<Space> []<Left>
-imap {<Space> {}<Left>
-imap '<Space> ''<Left>
-"imap <<Space> <><Left>
+inoremap " ""<Left>
+inoremap ' ''<Left>
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap <<Space> <><Left>
 nmap f zr
 nmap F zm
 nmap <F3> za
@@ -402,7 +417,7 @@ vnoremap <silent> <c-s-j> :call MoveBlockDown()<CR>
 
 
 set showtabline=2  " 0, 1 or 2; when to use a tab pages line
-"set tabline=%!MyTabLine()  " custom tab pages line
+set tabline=%!MyTabLine()  " custom tab pages line
 
 
 function! MyTabLine()
@@ -428,7 +443,7 @@ function! MyTabLine()
       let file = '[No Name]'
     endif
     let s .= string(i) . ":"
-    let file = strpart(file, 0, 10)
+    let file = strpart(file, 0, 25)
     let s .= file
     let i = i + 1
   endwhile
