@@ -276,7 +276,8 @@ au FileType cpp setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType javascript setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType javascript filetype indent on           " 打开自动缩进
 au FileType javascript setlocal foldmethod=indent   "折叠代码
-au FileType ruby setlocal foldmethod=syntax   "折叠C代码
+au FileType ruby filetype indent on
+au FileType ruby setlocal foldmethod=syntax
 au FileType ruby setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
@@ -371,12 +372,12 @@ nmap <F8> :reg<CR>
 nmap <F9>on :setlocal spell spelllang=en_us<CR>
 nmap <F9>off :setlocal nospell<CR>
 
-inoremap " ""<Left>
-inoremap ' ''<Left>
-inoremap ( ()<Left>
-inoremap [ []<Left>
-inoremap { {}<Left>
-inoremap <<Space> <><Left>
+inoremap "<Space> ""<Left>
+inoremap '<Space> ''<Left>
+inoremap (<Space> ()<Left>
+inoremap [<Space> []<Left>
+inoremap {<Space> {}<Left>
+""inoremap <<Space> <><Left>
 nmap f zr
 nmap F zm
 nmap <F3> za
