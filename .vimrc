@@ -61,6 +61,7 @@ Bundle 'gmarik/vundle'
 "	使用vim-syntastic需要flake8
 Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/vim-powerline'
+" less
 Bundle 'groenewege/vim-less'
 Bundle 'lastpos.vim'
 "	注释管理插件
@@ -311,9 +312,10 @@ let g:syntastic_enable_highlighting=0
 " E302 expected 2 blank lines, found 1
 " E501 line too long (91 > 79 characters)
 " W402 imported but unused
+" E701 multiple statements on one line (colon)
 "let g:syntastic_python_checker_args='--ignore=E501,E302,E231,E261,E201,W293,W291,E225,E203,E226'
 " W291 trailing whitespace
-let g:syntastic_python_checker_args='--ignore=W291'
+let g:syntastic_python_checker_args='--ignore=W291,E701'
 nmap cs :SyntasticCheck<CR>
 nmap <F7> :Errors<CR>
 
