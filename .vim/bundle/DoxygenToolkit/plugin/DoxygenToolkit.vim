@@ -891,7 +891,7 @@ endfunction
 " - Default type is still 'cpp'.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! s:CheckFileType()
-  if( &filetype == "python" )
+  if( &filetype == "python" || &filetype == "ruby" )
     let l:fileType       = "python"
   else
     let l:fileType       = "cpp"
