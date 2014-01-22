@@ -108,6 +108,9 @@ Bundle 'tpope/vim-fugitive'
 "Bundle 'yuratomo/w3m.vim'
 "	快速删除/修改光标周围配对的括号
 Bundle 'tpope/vim-surround'
+" rails开发工具
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rake'
 "	vim 中文输入法
 "Bundle 'vimim/vimim'
 "	vim 中文文档
@@ -257,7 +260,7 @@ let g:NERDTreeWinPos="left"
 let g:NERDTreeIgnore=['\~$', '\.pyo$', '\.bak$']
 let g:NERDTreeQuitOnOpen=1 " 打开文件后关闭
 
-set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 set foldmethod=indent
 
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
@@ -274,12 +277,12 @@ au FileType c setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType cpp filetype indent on                " 打开自动缩进
 au FileType cpp setlocal foldmethod=syntax   "折叠C代码
 au FileType cpp setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
-au FileType javascript setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+"au FileType javascript setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType javascript filetype indent on           " 打开自动缩进
 au FileType javascript setlocal foldmethod=indent   "折叠代码
 au FileType ruby filetype indent on
 au FileType ruby setlocal foldmethod=syntax
-au FileType ruby setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+"au FileType ruby setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
