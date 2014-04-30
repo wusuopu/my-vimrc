@@ -159,6 +159,9 @@ Bundle 'vim-scripts/bufexplorer.zip'
 "Bundle 'vim-multiple-cursors'
 "	对齐线
 Bundle 'nathanaelkane/vim-indent-guides'
+" jsLint
+" npm install jslint
+Bundle 'nathanaelkane/jslint.vim'
 
 "	我的插件
 "Bundle 'myyoudao_dict'
