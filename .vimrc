@@ -91,7 +91,7 @@ Bundle 'genutils'
 "	使用Tab补全Python
 Bundle 'Pydiction'
 "	自动弹出补全窗口
-Bundle 'AutoComplPop'
+" Bundle 'AutoComplPop'
 "Bundle 'taglist.vim'
 "	比taglist更好的代码结构浏览
 Bundle 'majutsushi/tagbar'
@@ -161,7 +161,24 @@ Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'nathanaelkane/vim-indent-guides'
 " jsLint
 " npm install jslint
-Bundle 'nathanaelkane/jslint.vim'
+" Bundle 'nathanaelkane/jslint.vim'
+
+" php symfony
+" requires Vim 7.3.885+ with Lua enabled
+ Bundle 'Shougo/neocomplete.vim'
+" vimproc需要编译
+Bundle 'Shougo/vimproc.vim'
+Bundle 'Shougo/unite.vim'
+" phpcomplete依赖
+" https://github.com/shawncplus/phpcomplete.vim/wiki/Patched-ctags
+" 需要编译安装 ctags-better-php-parser
+" 然后在项目目录执行命令： ctags -R --fields=+aimS --languages=php
+Bundle 'shawncplus/phpcomplete.vim'
+" 安装 composer.phar
+" curl -s https://getcomposer.org/installer | php
+" 安装依赖包： php composer.phar install
+Bundle 'm2mdas/phpcomplete-extended'
+Bundle 'm2mdas/phpcomplete-extended-symfony'
 
 "	我的插件
 "Bundle 'myyoudao_dict'
@@ -308,10 +325,19 @@ let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
 "snipMate设置
 let g:snips_author = 'Long Changjin <admin@longchangjin.cn>'
 "syntastic 语法检查设置
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_check_on_open=1
 let g:syntastic_quiet_warning=0
 let g:syntastic_enable_signs=1
 let g:syntastic_enable_highlighting=0
+
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 " E128 continuation line under-indented for visual indent
 " E261 at least two spaces before inline comment
@@ -367,9 +393,9 @@ nmap <C-x>c "+p
 map <C-x>q :qa<CR>
 nmap <C-n> <ESC>gt
 nmap <C-p> <ESC>gT
-nmap tt :tabedit .<CR>
-nmap tn :tabn<CR>
-nmap tp :tabp<CR>
+"nmap tt :tabedit .<CR>
+"nmap tn :tabn<CR>
+"nmap tp :tabp<CR>
 imap <C-u> <ESC><C-u>
 imap <C-d> <ESC><C-d>
 imap <C-b> <ESC>i
