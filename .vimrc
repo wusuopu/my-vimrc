@@ -143,11 +143,13 @@ Bundle 'python_fold'
 "Bundle 'vim-instant-markdown-py'
 
 "	lisp开发插件
-Bundle 'slimv099'
+" Bundle 'slimv099'
 "	Ack-grep插件。需要先安裝ack-grep
 Bundle 'mileszs/ack.vim'
 "	html/css插件
-Bundle 'mattn/zencoding-vim'
+" Bundle 'mattn/zencoding-vim'
+" zencoding的升级版
+Bundle 'mattn/emmet-vim'
 "	buffer浏览
 "Bundle 'fholgado/minibufexpl.vim'
 "	另一个buffer浏览
@@ -353,6 +355,8 @@ nmap <F7> :Errors<CR>
 
 " zencoding设置
 let g:user_zen_leader_key = '<c-x>'
+" emmet设置
+let g:user_emmet_leader_key='<c-x>'
 
 " indent-guides设置
 let g:indent_guides_guide_size=1
