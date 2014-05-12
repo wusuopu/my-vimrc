@@ -167,7 +167,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 
 " php symfony
 " requires Vim 7.3.885+ with Lua enabled
- Bundle 'Shougo/neocomplete.vim'
+Bundle 'Shougo/neocomplete.vim'
 " vimproc需要编译
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/unite.vim'
@@ -305,6 +305,8 @@ au FileType javascript setlocal foldmethod=indent   "折叠代码
 au FileType ruby filetype indent on
 au FileType ruby setlocal foldmethod=syntax
 "au FileType ruby setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+" au FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
@@ -340,6 +342,8 @@ let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+" let g:neocomplete#disable_auto_complete = 1
+let g:phpcomplete_index_composer_command = 'composer.phar'
 
 " E128 continuation line under-indented for visual indent
 " E261 at least two spaces before inline comment
@@ -514,4 +518,14 @@ function! SetColorColumn()
     else
         execute "set cc-=".col_num
     endif
+endfunction
+
+" 自动切换目录
+map <F6>ch :call SwitchAutoChdir()<CR>
+function SwitchAutoChdir()
+  if &autochdir == 1
+    execute "set autochdir!"
+  else
+    execute "set autochdir"
+  endif
 endfunction
