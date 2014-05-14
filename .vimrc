@@ -181,6 +181,7 @@ Bundle 'shawncplus/phpcomplete.vim'
 " 安装依赖包： php composer.phar install
 Bundle 'm2mdas/phpcomplete-extended'
 Bundle 'm2mdas/phpcomplete-extended-symfony'
+Bundle 'evidens/vim-twig'
 " vimshell
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/vimshell.vim'
@@ -423,11 +424,20 @@ nmap <F8> :reg<CR>
 nmap <F9>on :setlocal spell spelllang=en_us<CR>
 nmap <F9>off :setlocal nospell<CR>
 
-inoremap "<Space> ""<Left>
-inoremap '<Space> ''<Left>
-inoremap (<Space> ()<Left>
-inoremap [<Space> []<Left>
-inoremap {<Space> {}<Left>
+if has("gui_running")
+  inoremap <A-"> ""<Left>
+  inoremap <A-'> ''<Left>
+  inoremap <A-(> ()<Left>
+  inoremap <A-[> []<Left>
+  inoremap <A-{> {}<Left>
+  inoremap <A-<> <><Left>
+else
+  inoremap "<Space> ""<Left>
+  inoremap '<Space> ''<Left>
+  inoremap (<Space> ()<Left>
+  inoremap [<Space> []<Left>
+  inoremap {<Space> {}<Left>
+endif
 ""inoremap <<Space> <><Left>
 nmap f zr
 nmap F zm
