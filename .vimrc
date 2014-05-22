@@ -123,7 +123,7 @@ Bundle 'vimcdoc.svn'
 "	operators, highlighting, run and ipdb breakpoints)
 "Bundle 'klen/python-mode'
 "	Python and PHP Debugger
-"Bundle 'jabapyth/vim-debug'
+"Bundle 'jaredly/vim-debug'
 
 "	Gvim colorscheme
 Bundle 'Wombat'
@@ -311,8 +311,10 @@ au FileType javascript setlocal foldmethod=indent   "折叠代码
 au FileType ruby filetype indent on
 au FileType ruby setlocal foldmethod=syntax
 "au FileType ruby setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType php setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 " au FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
+au BufRead,BufNewFile *.md setlocal filetype=markdown
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
