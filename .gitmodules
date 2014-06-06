@@ -1,0 +1,3 @@
+[submodule "manual_search"]
+	path = .vim/bundle/manual_search.vim
+	url = https://github.com/wusuopu/manual_search.vim.git

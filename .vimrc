@@ -33,7 +33,7 @@ set laststatus=2 " 总是显示状态栏
 
 set cursorline
 "set cursorcolumn
-"set autochdir  "自动切换目录 与phpcomplete、vimshell冲突
+set autochdir  "自动切换目录 与phpcomplete、vimshell冲突
 set cc=81 " 81列处高亮
 set wrap  " 自动换行
 set list  " 把制表符显示为^I ,用$标示行尾（使用list分辨尾部的字符是tab还是空格）
@@ -171,26 +171,11 @@ Bundle 'Shougo/neocomplete.vim'
 " vimproc需要编译
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/unite.vim'
-" phpcomplete依赖
-" https://github.com/shawncplus/phpcomplete.vim/wiki/Patched-ctags
-" 需要编译安装 ctags-better-php-parser
-" 然后在项目目录执行命令： ctags -R --fields=+aimS --languages=php
-Bundle 'shawncplus/phpcomplete.vim'
-" 安装 composer.phar
-" curl -s https://getcomposer.org/installer | php
-" 安装依赖包： php composer.phar install
-Bundle 'm2mdas/phpcomplete-extended'
-Bundle 'm2mdas/phpcomplete-extended-symfony'
-Bundle 'evidens/vim-twig'
-" vimshell
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/vimshell.vim'
-Bundle 'Shougo/unite-ssh'
-Bundle 'ujihisa/vimshell-ssh'
 
 "	我的插件
 "Bundle 'myyoudao_dict'
 "Bundle 'myweibo'
+Bundle 'wosuopu/manual_search.vim'
 
 "color longchang " 颜色主题
 if has("gui_running")
@@ -236,6 +221,7 @@ let g:Powerline_stl_path_style='full'
 " bufexplorer
 let g:bufExplorerSortBy='fullpath'
 let g:bufExplorerSplitOutPathName=0
+let g:bufExplorerShowRelativePath=0
 
 " vim 中文输入法 http://www.vim.org/scripts/script.php?script_id=2506 vimim.vim
 "let g:vimim_cloud = 'sogou,baidu,qq'  
@@ -311,9 +297,33 @@ au FileType javascript setlocal foldmethod=indent   "折叠代码
 au FileType ruby filetype indent on
 au FileType ruby setlocal foldmethod=syntax
 "au FileType ruby setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
 au FileType php setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
-au FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
-" au FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
+
+if exists("g:php_dev_mode") && g:php_dev_mode
+  set autochdir!
+  " phpcomplete依赖
+  " https://github.com/shawncplus/phpcomplete.vim/wiki/Patched-ctags
+  " 需要编译安装 ctags-better-php-parser
+  " 然后在项目目录执行命令： ctags -R --fields=+aimS --languages=php
+  Bundle 'shawncplus/phpcomplete.vim'
+  " 安装 composer.phar
+  " curl -s https://getcomposer.org/installer | php
+  " 安装依赖包： php composer.phar install
+  Bundle 'm2mdas/phpcomplete-extended'
+  Bundle 'm2mdas/phpcomplete-extended-symfony'
+  Bundle 'evidens/vim-twig'
+  " vimshell
+  Bundle 'Shougo/neocomplcache'
+  Bundle 'Shougo/vimshell.vim'
+  Bundle 'Shougo/unite-ssh'
+  Bundle 'ujihisa/vimshell-ssh'
+  au FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+  " au FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
+
+  let g:phpcomplete_index_composer_command = 'composer.phar'
+end
+
 au BufRead,BufNewFile *.md setlocal filetype=markdown
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
@@ -351,7 +361,7 @@ let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 " let g:neocomplete#disable_auto_complete = 1
-let g:phpcomplete_index_composer_command = 'composer.phar'
+
 
 " E128 continuation line under-indented for visual indent
 " E261 at least two spaces before inline comment
@@ -392,14 +402,6 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
-"nmap <C-J> <C-w>J
-"nmap <C-K> <C-w>K
-"nmap <C-H> <C-w>H
-"nmap <C-L> <C-w>L
-"imap <C-j> <ESC>j
-"imap <C-k> <ESC>k
-"imap <C-h> <ESC>h
-"imap <C-l> <ESC>l
 
 cmap <C-a> <Home>
 cmap <C-e> <End>
@@ -543,7 +545,7 @@ endfunction
 
 " 自动切换目录
 map <F6>ch :call SwitchAutoChdir()<CR>
-function SwitchAutoChdir()
+function! SwitchAutoChdir()
   if &autochdir == 1
     execute "set autochdir!"
   else
@@ -551,33 +553,11 @@ function SwitchAutoChdir()
   endif
 endfunction
 
-
-function W3M_PHPManual()
-  execute "W3mTab local /media/Data/study/开发手册/php/php-chunked-xhtml/index.html"
-endfunction
-
-function W3M_PHPSymfonyApi()
-  execute "W3mTab local /media/Data/study/开发手册/php/api.symfony.com/2.4/index.html"
-endfunction
-
-function W3M_Python2Docs()
-  execute "W3mTab local file:///media/Data/study/开发手册/Book/python-2.7.4-docs-html/index.html"
-endfunction
-
-function W3M_Python3Docs()
-  execute "W3mTab local file:///media/Data/study/开发手册/Book/python-3.3.3-docs-html/index.html"
-endfunction
-
-function W3M_RubyCore()
-  execute "W3mTab local file:///media/Data/study/开发手册/Ruby/ruby_2_1_1_core/index.html"
-endfunction
-
-function W3M_RubyStdlib()
-  execute "W3mTab local file:///media/Data/study/开发手册/Ruby/ruby_2_1_1_stdlib/index.html"
-endfunction
-command! -nargs=0 PHPManual :call W3M_PHPManual()
-command! -nargs=0 PHPSymfonyApi :call W3M_PHPSymfonyApi()
-command! -nargs=0 Python2Docs :call W3M_Python2Docs()
-command! -nargs=0 Python3Docs :call W3M_Python3Docs()
-command! -nargs=0 RubyCore :call W3M_RubyCore()
-command! -nargs=0 RubyStdlib :call W3M_RubyStdlib()
+" 文档目录设置
+let g:php_manual_dir_path = $HOME . "/Book/Refernce/php/php-chunked-xhtml/"
+let g:php_symfony2_manual_dir_path = $HOME . "/Book/Refernce/php/api.symfony.com/2.4/"
+let g:php_symfony2_api_manual_dir_path = $HOME . "/Book/Refernce/php/api.symfony.com/2.4/"
+let g:python2_manual_dir_path = $HOME . "/Book/Refernce/Book/python-2.7.4-docs-html/"
+let g:python3_manual_dir_path = $HOME . "/Book/Refernce/Book/python-3.3.3-docs-html/"
+let g:ruby_core_manual_dir_path = $HOME . "/Book/Refernce/Ruby/ruby_2_1_1_core/"
+let g:ruby_stdlib_manual_dir_path = $HOME . "/Book/Refernce/Ruby/ruby_2_1_1_stdlib/"
