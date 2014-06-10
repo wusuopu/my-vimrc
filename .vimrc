@@ -172,6 +172,10 @@ Bundle 'Shougo/neocomplete.vim'
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/unite.vim'
 
+" zeal文档查询
+" http://zealdocs.org/download.html
+"Bundle 'Keithbsmiley/investigate.vim'
+
 "	我的插件
 "Bundle 'myyoudao_dict'
 "Bundle 'myweibo'

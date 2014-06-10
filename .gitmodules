@@ -1,3 +1,6 @@
 [submodule "manual_search"]
 	path = .vim/bundle/manual_search.vim
 	url = https://github.com/wusuopu/manual_search.vim.git
+[submodule ".vim/bundle/investigate.vim"]
+	path = .vim/bundle/investigate.vim
+	url = https://github.com/Keithbsmiley/investigate.vim
