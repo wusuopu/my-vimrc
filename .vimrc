@@ -89,7 +89,7 @@ Bundle 'VimExplorer'
 "Bundle 'lookupfile'
 Bundle 'genutils'
 "	使用Tab补全Python
-Bundle 'Pydiction'
+"Bundle 'Pydiction'
 "	自动弹出补全窗口
 " Bundle 'AutoComplPop'
 "Bundle 'taglist.vim'
@@ -165,6 +165,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 " npm install jslint
 " Bundle 'nathanaelkane/jslint.vim'
 
+Bundle 'evidens/vim-twig'
 " php symfony
 " requires Vim 7.3.885+ with Lua enabled
 Bundle 'Shougo/neocomplete.vim'
@@ -316,7 +317,6 @@ if exists("g:php_dev_mode") && g:php_dev_mode
   " 安装依赖包： php composer.phar install
   Bundle 'm2mdas/phpcomplete-extended'
   Bundle 'm2mdas/phpcomplete-extended-symfony'
-  Bundle 'evidens/vim-twig'
   " vimshell
   Bundle 'Shougo/neocomplcache'
   Bundle 'Shougo/vimshell.vim'
@@ -325,7 +325,7 @@ if exists("g:php_dev_mode") && g:php_dev_mode
   au FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
   " au FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
 
-  let g:phpcomplete_index_composer_command = 'composer.phar'
+  let g:phpcomplete_index_composer_command = 'composer'
 end
 
 au BufRead,BufNewFile *.md setlocal filetype=markdown
