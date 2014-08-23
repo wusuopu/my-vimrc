@@ -143,7 +143,7 @@ Bundle 'python_fold'
 "Bundle 'vim-instant-markdown-py'
 
 "	lisp开发插件
-" Bundle 'slimv099'
+Bundle 'kovisoft/slimv'
 "	Ack-grep插件。需要先安裝ack-grep
 Bundle 'mileszs/ack.vim'
 "	html/css插件
@@ -393,6 +393,9 @@ hi IndentGuidesEven ctermbg=darkgrey
 let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
 let g:vimshell_prompt =  '$ '
 
+" slimv
+let g:slimv_swank_cmd = '! xterm -e clisp --load ~/.vim/bundle/slimv/slime/swank-clisp.lisp &'
+let g:lisp_rainbow=1
 
 "窗口操作
 map <C-F3> :split<CR>  		"横向分割窗口

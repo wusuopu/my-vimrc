@@ -4,3 +4,6 @@
 [submodule ".vim/bundle/investigate.vim"]
 	path = .vim/bundle/investigate.vim
 	url = https://github.com/Keithbsmiley/investigate.vim
+[submodule ".vim/bundle/slimv"]
+	path = .vim/bundle/slimv
+	url = https://github.com/kovisoft/slimv
