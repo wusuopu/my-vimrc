@@ -38,7 +38,7 @@ set cc=81 " 81列处高亮
 set wrap  " 自动换行
 set list  " 把制表符显示为^I ,用$标示行尾（使用list分辨尾部的字符是tab还是空格）
 "set listchars=tab:>-,trail:-
-set listchars=tab:>-
+set listchars=tab:>-,trail:·
 set backspace=indent,eol,start   "设置backspace删除
 "set ignorecase    " 搜索忽略大小写
 "set noignorecase  " 搜索忽略不大小写
@@ -304,6 +304,9 @@ au FileType ruby setlocal foldmethod=syntax
 "au FileType ruby setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 au FileType php setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+
+" less高亮设置
+au BufNewFile,BufRead *.less set ft=less
 
 if exists("g:php_dev_mode") && g:php_dev_mode
   set autochdir!
