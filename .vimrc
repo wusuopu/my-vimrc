@@ -181,6 +181,8 @@ Bundle 'Shougo/unite.vim'
 "Bundle 'myyoudao_dict'
 "Bundle 'myweibo'
 Bundle 'wosuopu/manual_search.vim'
+" coffescript
+Bundle 'kchmck/vim-coffee-script'
 
 "color longchang " 颜色主题
 if has("gui_running")
@@ -307,6 +309,8 @@ au FileType php setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 " less高亮设置
 au BufNewFile,BufRead *.less set ft=less
+" coffee高亮设置
+au BufNewFile,BufRead *.coffee set ft=coffee
 
 if exists("g:php_dev_mode") && g:php_dev_mode
   set autochdir!
