@@ -183,6 +183,13 @@ Bundle 'Shougo/unite.vim'
 Bundle 'wosuopu/manual_search.vim'
 " coffescript
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'carlosvillu/coffeScript-VIM-Snippets'
+" Elixir
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'carlosgaldino/elixir-snippets'
+
+" 方便的文件跳转工具
+Bundle 'bundle/ctrlp.vim'
 
 "color longchang " 颜色主题
 if has("gui_running")
@@ -311,6 +318,8 @@ au FileType php setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au BufNewFile,BufRead *.less set ft=less
 " coffee高亮设置
 au BufNewFile,BufRead *.coffee set ft=coffee
+" elixir高亮设置
+au BufNewFile,BufRead *.exs set ft=elixir
 
 if exists("g:php_dev_mode") && g:php_dev_mode
   set autochdir!
