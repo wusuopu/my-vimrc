@@ -258,13 +258,13 @@ map <F5>l :DoxLic<CR>      " 版权信息
 " project 项目管理工具 http://www.vim.org/scripts/script.php?script_id=69
 map <F5>p <Plug>ToggleProject
 map <F5>C <LocalLeader>C   " 创建项目
-map <F5>c <LocalLeader>c   “
+map <F5>c <LocalLeader>c   "
 map <F5>R <LocalLeader>R   " 更新项目
-map <F5>r <LocalLeader>r   ”
-map <F5>W <LocalLeader>W   “ 删除文件
-map <F5>w <LocalLeader>w   ”
-map <F5>G <LocalLeader>G   ” 搜索文件
-map <F5>g <LocalLeader>g   ” 搜索文件
+map <F5>r <LocalLeader>r   "
+map <F5>W <LocalLeader>W   " 删除文件
+map <F5>w <LocalLeader>w   "
+map <F5>G <LocalLeader>G   " 搜索文件
+map <F5>g <LocalLeader>g   " 搜索文件
 "let g:proj_window_width=20    " 窗口宽度
 let g:proj_window_increment=90  " 窗口宽度增加量
 "let g:proj_flags='i'            " 在命令行显示文件名和当前工作路径
@@ -412,6 +412,11 @@ let g:vimshell_prompt =  '$ '
 " slimv
 let g:slimv_swank_cmd = '! xterm -e clisp --load ~/.vim/bundle/slimv/slime/swank-clisp.lisp &'
 let g:lisp_rainbow=1
+
+" CtrlP
+let g:ctrlp_map = ''
+let g:ctrlp_cmd = 'CtrlP'
+map <F6>p :CtrlP<CR>
 
 "窗口操作
 map <C-F3> :split<CR>  		"横向分割窗口
