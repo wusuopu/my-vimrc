@@ -111,6 +111,7 @@ Bundle 'tpope/vim-surround'
 " rails开发工具
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-bundler'
 "	vim 中文输入法
 "Bundle 'vimim/vimim'
 "	vim 中文文档
@@ -416,7 +417,7 @@ let g:lisp_rainbow=1
 " CtrlP
 let g:ctrlp_map = ''
 let g:ctrlp_cmd = 'CtrlP'
-map <F6>p :CtrlP<CR>
+map <F6>p :CtrlP
 
 "窗口操作
 map <C-F3> :split<CR>  		"横向分割窗口
