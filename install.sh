@@ -16,4 +16,21 @@ else
 	ln -sfv $PWD/.vim ~/
 fi
 
+echo "从 Git 安装插件...."
+git submodule update --init
+
+echo "编译 vimproc..."
+pushd .vim/bundle/vimproc.vim
+make
+popd
+
+echo "编译 ctags..."
+pushd .vim/bundle/phpcomplete.vim
+rm -rfv ctags
+tar xf ctags-better-php-parser.tar.bz2
+sh ./configure
+make
+sudo make install
+popd
+
 echo "安装完成"
