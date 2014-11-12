@@ -190,7 +190,10 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'carlosgaldino/elixir-snippets'
 
 " 方便的文件跳转工具
-Bundle 'bundle/ctrlp.vim'
+Bundle 'kien/ctrlp.vim'
+
+" 目录差异对比
+Bundle 'DirDiff.vim'
 
 "color longchang " 颜色主题
 if has("gui_running")
