@@ -195,6 +195,9 @@ Bundle 'kien/ctrlp.vim'
 " 目录差异对比
 Bundle 'DirDiff.vim'
 
+" dbgp远程调试
+Bundle 'wusuopu/vdebug'
+
 "color longchang " 颜色主题
 if has("gui_running")
   colorscheme darkZ
@@ -421,6 +424,9 @@ let g:lisp_rainbow=1
 let g:ctrlp_map = ''
 let g:ctrlp_cmd = 'CtrlP'
 map <F6>p :CtrlP
+
+" vdebug dbgp
+let g:vdebug_leader_key = g:mapleader
 
 "窗口操作
 map <C-F3> :split<CR>  		"横向分割窗口
