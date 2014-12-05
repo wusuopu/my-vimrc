@@ -198,6 +198,9 @@ Bundle 'DirDiff.vim'
 " dbgp远程调试
 Bundle 'wusuopu/vdebug'
 
+" asciidoc
+Bundle 'asciidoc'
+
 "color longchang " 颜色主题
 if has("gui_running")
   colorscheme darkZ
@@ -327,6 +330,8 @@ au BufNewFile,BufRead *.less set ft=less
 au BufNewFile,BufRead *.coffee set ft=coffee
 " elixir高亮设置
 au BufNewFile,BufRead *.exs set ft=elixir
+" asciidoc高亮设置
+au BufNewFile,BufRead *.asciidoc,*.adoc set ft=asciidoc
 
 if exists("g:php_dev_mode") && g:php_dev_mode
   set autochdir!
