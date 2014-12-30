@@ -201,6 +201,9 @@ Bundle 'wusuopu/vdebug'
 " asciidoc
 Bundle 'asciidoc'
 
+" Blade模板
+Bundle 'xsbeats/vim-blade'
+
 "color longchang " 颜色主题
 if has("gui_running")
   colorscheme darkZ
