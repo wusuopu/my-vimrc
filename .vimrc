@@ -203,6 +203,8 @@ Bundle 'asciidoc'
 
 " Blade模板
 Bundle 'xsbeats/vim-blade'
+" Slim模板
+Bundle 'slim-template/vim-slim'
 
 "color longchang " 颜色主题
 if has("gui_running")
@@ -332,9 +334,11 @@ au BufNewFile,BufRead *.less set ft=less
 " coffee高亮设置
 au BufNewFile,BufRead *.coffee set ft=coffee
 " elixir高亮设置
-au BufNewFile,BufRead *.exs set ft=elixir
+au BufNewFile,BufRead *.ex,*.exs set ft=elixir
 " asciidoc高亮设置
 au BufNewFile,BufRead *.asciidoc,*.adoc set ft=asciidoc
+" Slim模板
+au BufNewFile,BufRead *.slim set ft=slim
 
 if exists("g:php_dev_mode") && g:php_dev_mode
   set autochdir!
