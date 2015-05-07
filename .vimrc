@@ -159,7 +159,7 @@ Bundle 'vim-scripts/bufexplorer.zip'
 "	pip install twisted
 "Bundle 'CoVim'
 "	多光标
-"Bundle 'vim-multiple-cursors'
+Bundle 'vim-multiple-cursors'
 "	对齐线
 Bundle 'nathanaelkane/vim-indent-guides'
 " jsLint
@@ -327,7 +327,7 @@ au FileType ruby filetype indent on
 au FileType ruby setlocal foldmethod=syntax
 "au FileType ruby setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
-au FileType php setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au FileType php setlocal tabstop=4 expandtab! shiftwidth=4 softtabstop=4
 
 " less高亮设置
 au BufNewFile,BufRead *.less set ft=less
@@ -439,6 +439,27 @@ map <F6>p :CtrlP
 
 " vdebug dbgp
 let g:vdebug_leader_key = g:mapleader
+
+" multiple-cursor与neocomplete
+" Called once right before you start selecting multiple cursors
+function! Multiple_cursors_before()
+  if exists(':NeoCompleteLock')==2
+    exe 'NeoCompleteLock'
+  endif
+endfunction
+" Called once only when the multiple selection is canceled (default <Esc>)
+function! Multiple_cursors_after()
+  if exists(':NeoCompleteUnlock')==2
+    exe 'NeoCompleteUnlock'
+  endif
+endfunction
+" 修改按键，避免与上下翻页冲突
+let g:multi_cursor_next_key='<C-j>'
+let g:multi_cursor_prev_key='<C-k>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_start_key='<F9>'
+let g:multi_cursor_start_key='<C-j>'
+let g:multi_cursor_start_word_key='g<C-j>'
 
 "窗口操作
 map <C-F3> :split<CR>  		"横向分割窗口
@@ -611,3 +632,5 @@ let g:python2_manual_dir_path = $HOME . "/Book/Refernce/Book/python-2.7.4-docs-h
 let g:python3_manual_dir_path = $HOME . "/Book/Refernce/Book/python-3.3.3-docs-html/"
 let g:ruby_core_manual_dir_path = $HOME . "/Book/Refernce/Ruby/ruby_2_1_1_core/"
 let g:ruby_stdlib_manual_dir_path = $HOME . "/Book/Refernce/Ruby/ruby_2_1_1_stdlib/"
+
+command! -nargs=0 ManualRails3 :W3mTab file:///home/lcj/.local/share/zeal/docsets/Ruby_on_Rails_3.docset/Contents/Resources/Documents/guides.rubyonrails.org/v3.2.21/index.html
