@@ -7,7 +7,6 @@ let g:maplocalleader = '\' " 设置<LocalLeader>键
 set gfn=Monospace\ 9 " 字体设置
 set nocompatible " 关闭兼容模式
 syntax on " 打开语法高亮
-filetype plugin on " 打开文件类型插件
 set autoindent " 打开自动缩进
 set nu " 显示行号
 set showcmd " 显示命令
@@ -46,165 +45,197 @@ set backspace=indent,eol,start   "设置backspace删除
 "vundle设置 begine--------------------------------------------------------
 "git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 let root = '~/.vim/bundle'
-let src = 'http://github.com/gmarik/vundle.git'
-if !isdirectory(expand(root, 1).'/vundle')
-    exec '!git clone '.src.' '.shellescape(root, 1).'/vundle'
+let src = 'https://github.com/gmarik/Vundle.vim.git'
+if !isdirectory(expand(root, 1).'/Vundle.vim')
+    exec '!git clone '.src.' '.shellescape(root, 1).'/Vundle.vim'
 endif
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-Bundle 'gmarik/vundle'
+filetype off    " 配置vundle前需要先关闭文件类型的检测
+" set the runtime path to include Vundle and initialize
+" 新版的 Vundle 将 Bundle 命令改为了 Plugin
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 
 "	需要先安装flake8
 "	easy_install flake8
-"Bundle 'vim-flake8'
+"Plugin 'vim-flake8'
 "	使用vim-syntastic需要flake8
-Bundle 'scrooloose/syntastic'
-Bundle 'Lokaltog/vim-powerline'
+Plugin 'scrooloose/syntastic'
+Plugin 'Lokaltog/vim-powerline'
 " less
-Bundle 'groenewege/vim-less'
-Bundle 'lastpos.vim'
+Plugin 'groenewege/vim-less'
+Plugin 'lastpos.vim'
 "	注释管理插件
-Bundle 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 "	 python文档查找，使用Pydoc <keyword>，如Pydoc re
 "    PydocSearch <keyword>
 "    当光标在某个词上时按'\pW'
-Bundle 'fs111/pydoc.vim'
+Plugin 'fs111/pydoc.vim'
 "	Python代码折叠，F换发所有折叠，f触发光标所在位置折叠，Shift+e执行当前脚本
-Bundle 'python.vim'
+Plugin 'python.vim'
 "	Python拼写检查，:cc定位语法错误
-"Bundle 'pyflakes.vim'
+"Plugin 'pyflakes.vim'
 "	pyton pep8代码风格检查
-"Bundle 'pep8.vim'
+"Plugin 'pep8.vim'
 "	自动语法检查，需要pyflakes
 "	默认迅捷 键是cs
 "	g:pcs_hotkey，修改快捷键
 "	g:pcs_check_when_saving，保存时检查
-"Bundle 'python_check_syntax.vim'
-"Bundle 'python_fn.vim'
+"Plugin 'python_check_syntax.vim'
+"Plugin 'python_fn.vim'
 "	文件浏览器，NerdTree命令
-Bundle 'The-NERD-tree'
+Plugin 'The-NERD-tree'
 "	很强大的文件浏览器,VE命令
-Bundle 'VimExplorer'
-"Bundle 'lookupfile'
-Bundle 'genutils'
+Plugin 'VimExplorer'
+"Plugin 'lookupfile'
+Plugin 'genutils'
 "	使用Tab补全Python
-"Bundle 'Pydiction'
+"Plugin 'Pydiction'
 "	自动弹出补全窗口
-" Bundle 'AutoComplPop'
-"Bundle 'taglist.vim'
+" Plugin 'AutoComplPop'
+"Plugin 'taglist.vim'
 "	比taglist更好的代码结构浏览
-Bundle 'majutsushi/tagbar'
-"Bundle 'winmanager'
+Plugin 'majutsushi/tagbar'
+"Plugin 'winmanager'
 "	在vim中运行shell
-"Bundle 'Conque-Shell'
+"Plugin 'Conque-Shell'
 "	快速插入内容
-Bundle 'snipMate'
+"Plugin 'snipMate'
+" 替代 snipMate
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 "	vim git 管理
-"Bundle 'motemen/git-vim'
+"Plugin 'motemen/git-vim'
 "	强大的git工具
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 "	vim w3m
-Bundle 'yuratomo/w3m.vim'
+Plugin 'yuratomo/w3m.vim'
 "	快速删除/修改光标周围配对的括号
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 " rails开发工具
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-rake'
-Bundle 'tpope/vim-bundler'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-bundler'
 "	vim 中文输入法
-"Bundle 'vimim/vimim'
+"Plugin 'vimim/vimim'
 "	vim 中文文档
-Bundle 'vimcdoc.svn'
+Plugin 'vimcdoc.svn'
 "	自动补全括号
-"Bundle 'Townk/vim-autoclose'
+"Plugin 'Townk/vim-autoclose'
 "	Yank history navigation, <C-p>和<C-n>粘贴历史文字
-"Bundle 'YankRing.vim'
+"Plugin 'YankRing.vim'
 "	Python mode (indentation, doc, refactor, lints, code checking, motion and
 "	operators, highlighting, run and ipdb breakpoints)
-"Bundle 'klen/python-mode'
+"Plugin 'klen/python-mode'
 "	Python and PHP Debugger
-"Bundle 'jaredly/vim-debug'
+"Plugin 'jaredly/vim-debug'
 
 "	Gvim colorscheme
-Bundle 'Wombat'
+Plugin 'Wombat'
 "	Terminal Vim with 256 colors colorscheme
-Bundle 'fisadev/fisa-vim-colorscheme'
+Plugin 'fisadev/fisa-vim-colorscheme'
 "	Color Scheme Explorer
-Bundle 'csExplorer'
+Plugin 'csExplorer'
 "	一些颜色主题
-Bundle 'ColorSamplerPack'
+Plugin 'ColorSamplerPack'
 "	自动注释
-Bundle 'DoxygenToolkit'
+Plugin 'DoxygenToolkit'
 "	项目管理
-Bundle 'project'
-Bundle 'matchit'
-Bundle 'python_fold'
+Plugin 'project'
+Plugin 'matchit'
+Plugin 'python_fold'
 "	markdown实时预览
-"Bundle 'vim-instant-markdown-py'
+"Plugin 'vim-instant-markdown-py'
 
 "	lisp开发插件
-Bundle 'kovisoft/slimv'
+Plugin 'kovisoft/slimv'
 "	Ack-grep插件。需要先安裝ack-grep
-Bundle 'mileszs/ack.vim'
+Plugin 'mileszs/ack.vim'
 "	html/css插件
-" Bundle 'mattn/zencoding-vim'
+" Plugin 'mattn/zencoding-vim'
 " zencoding的升级版
-Bundle 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 "	buffer浏览
-"Bundle 'fholgado/minibufexpl.vim'
+"Plugin 'fholgado/minibufexpl.vim'
 "	另一个buffer浏览
-Bundle 'vim-scripts/bufexplorer.zip'
+Plugin 'vim-scripts/bufexplorer.zip'
 "	多人协作
 "	pip install twisted
-"Bundle 'CoVim'
+"Plugin 'CoVim'
 "	多光标
-Bundle 'vim-multiple-cursors'
+Plugin 'vim-multiple-cursors'
 "	对齐线
-Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'nathanaelkane/vim-indent-guides'
 " jsLint
 " npm install jslint
-" Bundle 'nathanaelkane/jslint.vim'
+" Plugin 'nathanaelkane/jslint.vim'
 
-Bundle 'evidens/vim-twig'
+Plugin 'evidens/vim-twig'
 " php symfony
 " requires Vim 7.3.885+ with Lua enabled
-Bundle 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neocomplete.vim'
 " vimproc需要编译
-Bundle 'Shougo/vimproc.vim'
-Bundle 'Shougo/unite.vim'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/unite.vim'
 
 " zeal文档查询
 " http://zealdocs.org/download.html
-"Bundle 'Keithbsmiley/investigate.vim'
+"Plugin 'Keithbsmiley/investigate.vim'
 
 "	我的插件
-"Bundle 'myyoudao_dict'
-"Bundle 'myweibo'
-Bundle 'wosuopu/manual_search.vim'
+"Plugin 'myyoudao_dict'
+"Plugin 'myweibo'
+Plugin 'wosuopu/manual_search.vim'
 " coffescript
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'carlosvillu/coffeScript-VIM-Snippets'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'carlosvillu/coffeScript-VIM-Snippets'
 " Elixir
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'carlosgaldino/elixir-snippets'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'carlosgaldino/elixir-snippets'
 
 " 方便的文件跳转工具
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
 " 目录差异对比
-Bundle 'DirDiff.vim'
+Plugin 'DirDiff.vim'
 
 " dbgp远程调试
-Bundle 'wusuopu/vdebug'
+Plugin 'wusuopu/vdebug'
 
 " asciidoc
-Bundle 'asciidoc'
+Plugin 'asciidoc'
 
 " Blade模板
-Bundle 'xsbeats/vim-blade'
+Plugin 'xsbeats/vim-blade'
 " Slim模板
-Bundle 'slim-template/vim-slim'
+Plugin 'slim-template/vim-slim'
+
+" PHP相关的插件
+if exists("g:php_dev_mode") && g:php_dev_mode
+  set autochdir!
+  " phpcomplete依赖
+  " https://github.com/shawncplus/phpcomplete.vim/wiki/Patched-ctags
+  " 需要编译安装 ctags-better-php-parser
+  " 然后在项目目录执行命令： ctags -R --fields=+aimS --languages=php
+  Plugin 'shawncplus/phpcomplete.vim'
+  " 安装 composer.phar
+  " curl -s https://getcomposer.org/installer | php
+  " 安装依赖包： php composer.phar install
+  Plugin 'm2mdas/phpcomplete-extended'
+  Plugin 'm2mdas/phpcomplete-extended-symfony'
+  " vimshell
+  Plugin 'Shougo/neocomplcache'
+  Plugin 'Shougo/vimshell.vim'
+  Plugin 'Shougo/unite-ssh'
+  Plugin 'ujihisa/vimshell-ssh'
+  au FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+  " au FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
+
+  let g:phpcomplete_index_composer_command = 'composer'
+end
+
+call vundle#end()   " Vundle 初始化完成
 
 "color longchang " 颜色主题
 if has("gui_running")
@@ -225,6 +256,7 @@ endif     " has
 "highlight FoldColumn guibg=grey30 guifg=tan  "折柱
 "highlight ColorColumn cterm=NONE ctermbg=001
 
+filetype plugin on " 打开文件类型插件
 filetype plugin indent on
 "    安装所设置插件
 "    安装：BundleInstall，更新：BundleInstall!，卸载不在列表的插件：BundleClean
@@ -340,29 +372,6 @@ au BufNewFile,BufRead *.asciidoc,*.adoc set ft=asciidoc
 " Slim模板
 au BufNewFile,BufRead *.slim set ft=slim
 
-if exists("g:php_dev_mode") && g:php_dev_mode
-  set autochdir!
-  " phpcomplete依赖
-  " https://github.com/shawncplus/phpcomplete.vim/wiki/Patched-ctags
-  " 需要编译安装 ctags-better-php-parser
-  " 然后在项目目录执行命令： ctags -R --fields=+aimS --languages=php
-  Bundle 'shawncplus/phpcomplete.vim'
-  " 安装 composer.phar
-  " curl -s https://getcomposer.org/installer | php
-  " 安装依赖包： php composer.phar install
-  Bundle 'm2mdas/phpcomplete-extended'
-  Bundle 'm2mdas/phpcomplete-extended-symfony'
-  " vimshell
-  Bundle 'Shougo/neocomplcache'
-  Bundle 'Shougo/vimshell.vim'
-  Bundle 'Shougo/unite-ssh'
-  Bundle 'ujihisa/vimshell-ssh'
-  au FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
-  " au FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
-
-  let g:phpcomplete_index_composer_command = 'composer'
-end
-
 au BufRead,BufNewFile *.md setlocal filetype=markdown
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
@@ -385,6 +394,13 @@ let g:acp_enableAtStartup = 0    "取消运行启用
 let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
 "snipMate设置
 let g:snips_author = 'Long Changjin <admin@longchangjin.cn>'
+"ultisnips设置
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 "syntastic 语法检查设置
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_check_on_open=1
