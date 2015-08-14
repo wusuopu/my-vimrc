@@ -186,10 +186,10 @@ Plugin 'Shougo/unite.vim'
 "	我的插件
 "Plugin 'myyoudao_dict'
 "Plugin 'myweibo'
-Plugin 'wosuopu/manual_search.vim'
+"Plugin 'wosuopu/manual_search.vim'     " 与 macvim 不兼容
 " coffescript
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'carlosvillu/coffeScript-VIM-Snippets'
+" Plugin 'carlosvillu/coffeScript-VIM-Snippets'
 " Elixir
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'carlosgaldino/elixir-snippets'
@@ -210,6 +210,8 @@ Plugin 'asciidoc'
 Plugin 'xsbeats/vim-blade'
 " Slim模板
 Plugin 'slim-template/vim-slim'
+" Rust
+Plugin 'rust-lang/rust.vim'
 
 " PHP相关的插件
 if exists("g:php_dev_mode") && g:php_dev_mode
@@ -371,6 +373,8 @@ au BufNewFile,BufRead *.ex,*.exs set ft=elixir
 au BufNewFile,BufRead *.asciidoc,*.adoc set ft=asciidoc
 " Slim模板
 au BufNewFile,BufRead *.slim set ft=slim
+" Rust
+au BufNewFile,BufRead *.rs set ft=rust
 
 au BufRead,BufNewFile *.md setlocal filetype=markdown
 
