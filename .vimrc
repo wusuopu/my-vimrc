@@ -212,6 +212,8 @@ Plugin 'xsbeats/vim-blade'
 Plugin 'slim-template/vim-slim'
 " Rust
 Plugin 'rust-lang/rust.vim'
+" jsx
+Plugin 'mxw/vim-jsx'
 
 " PHP相关的插件
 if exists("g:php_dev_mode") && g:php_dev_mode
