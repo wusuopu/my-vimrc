@@ -213,7 +213,7 @@ Plugin 'slim-template/vim-slim'
 " Rust
 Plugin 'rust-lang/rust.vim'
 " jsx
-Plugin 'mxw/vim-jsx'
+"Plugin 'mxw/vim-jsx'
 
 " PHP相关的插件
 if exists("g:php_dev_mode") && g:php_dev_mode
@@ -515,8 +515,8 @@ imap <C-u> <ESC><C-u>
 imap <C-d> <ESC><C-d>
 imap <C-b> <ESC>i
 imap <C-f> <ESC>la
-imap <F2> cprt<Tab>
-nmap <F2> icprt<Tab><ESC>
+"imap <F2> cprt<Tab>
+"nmap <F2> icprt<Tab><ESC>
 nmap <F8> :reg<CR>
 nmap <F9>on :setlocal spell spelllang=en_us<CR>
 nmap <F9>off :setlocal nospell<CR>
@@ -656,3 +656,9 @@ let g:ruby_core_manual_dir_path = $HOME . "/Book/Refernce/Ruby/ruby_2_1_1_core/"
 let g:ruby_stdlib_manual_dir_path = $HOME . "/Book/Refernce/Ruby/ruby_2_1_1_stdlib/"
 
 command! -nargs=0 ManualRails3 :W3mTab file:///home/lcj/.local/share/zeal/docsets/Ruby_on_Rails_3.docset/Contents/Resources/Documents/guides.rubyonrails.org/v3.2.21/index.html
+
+"let g:loaded_syntastic_javascript_jshint_checker = 1
+"let g:loaded_syntastic_javascript_jslint_checker = 1
+"let g:loaded_syntastic_javascript_jsxhint_checker = 1
+"let g:syntastic_javascript_eslint_conf = "./.eslintrc"
+let g:syntastic_javascript_checkers = ['eslint']
