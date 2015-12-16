@@ -214,6 +214,8 @@ Plugin 'slim-template/vim-slim'
 Plugin 'rust-lang/rust.vim'
 " jsx
 "Plugin 'mxw/vim-jsx'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rvm'
 
 " PHP相关的插件
 if exists("g:php_dev_mode") && g:php_dev_mode
