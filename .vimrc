@@ -216,6 +216,8 @@ Plugin 'rust-lang/rust.vim'
 "Plugin 'mxw/vim-jsx'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rvm'
+" Swift
+Plugin 'toyamarinyon/vim-swift'
 
 " PHP相关的插件
 if exists("g:php_dev_mode") && g:php_dev_mode
@@ -664,3 +666,5 @@ command! -nargs=0 ManualRails3 :W3mTab file:///home/lcj/.local/share/zeal/docset
 "let g:loaded_syntastic_javascript_jsxhint_checker = 1
 "let g:syntastic_javascript_eslint_conf = "./.eslintrc"
 let g:syntastic_javascript_checkers = ['eslint']
+
+let g:vimshell_editor_command = 'vim'

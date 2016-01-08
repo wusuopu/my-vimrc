@@ -47,21 +47,61 @@ endsnippet
 
 # Components
 snippet "<Image" "Image" r
-<Image source={$1} />$2
+<Image source={$1} />$0
 endsnippet
 
 snippet "<ListView" "ListView" r
-<ListView dataSource={$1} renderRow={$2} />$3
+<ListView dataSource={$1} renderRow={$2} />$0
+endsnippet
+
+snippet "<Navigator" "Navigator" r
+<Navigator
+	initialRoute={$1}
+	renderScene={$2}
+	/>$0
+endsnippet
+
+snippet "<Texts" "Text with style" r
+<Text style={$1}>
+	$2
+</Text>$0
 endsnippet
 
 snippet "<Text" "Text" r
 <Text>
-$1
-</Text>$2
+	$1
+</Text>$0
 endsnippet
 
 snippet "<View" "View" r
 <View>
-$1
-</View>$2
+	$1
+</View>$0
+endsnippet
+
+snippet "<Views" "View with style" r
+<View style={$1}>
+	$2
+</View>$0
+endsnippet
+
+snippet "rnNewComponent" "create a new Component" r
+'use strict';
+
+const React = require('react-native');
+const {
+  StyleSheet,
+  Text,
+  View,
+} = React;
+
+const ${1:name}  = React.createClass({
+  render() {
+    return (
+      $0
+    );
+  }
+});
+
+module.exports = $1;
 endsnippet
