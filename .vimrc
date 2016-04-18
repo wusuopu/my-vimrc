@@ -218,6 +218,12 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rvm'
 " Swift
 Plugin 'toyamarinyon/vim-swift'
+" Dash.app
+Plugin 'rizzatti/dash.vim'
+" mustache and handlebars mode for vim
+Plugin 'mustache/vim-mustache-handlebars'
+" Gradle
+Plugin 'tfnico/vim-gradle'
 
 " PHP相关的插件
 if exists("g:php_dev_mode") && g:php_dev_mode
@@ -383,6 +389,7 @@ au BufNewFile,BufRead *.slim set ft=slim
 au BufNewFile,BufRead *.rs set ft=rust
 
 au BufRead,BufNewFile *.md setlocal filetype=markdown
+au BufNewFile,BufRead *.es6 set ft=javascript
 
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
@@ -426,6 +433,14 @@ let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 " let g:neocomplete#disable_auto_complete = 1
+let g:EclimCompletionMethod = 'omnifunc'
+if !exists('g:neocomplcache_force_omni_patterns')
+  let g:neocomplcache_force_omni_patterns = {}
+endif
+let g:neocomplcache_force_omni_patterns.java = '\k\.\k*'
+let g:neocomplcache_force_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+let g:neocomplcache_force_omni_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+let g:neocomplcache_force_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
 
 " E128 continuation line under-indented for visual indent

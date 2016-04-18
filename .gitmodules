@@ -67,3 +67,12 @@
 [submodule "swift"]
 	path = .vim/bundle/vim-swift
 	url = https://github.com/toyamarinyon/vim-swift
+[submodule ".vim/bundle/vim-gradle"]
+	path = .vim/bundle/vim-gradle
+	url = https://github.com/tfnico/vim-gradle.git
+[submodule ".vim/bundle/vim-mustache-handlebars"]
+	path = .vim/bundle/vim-mustache-handlebars
+	url = git://github.com/mustache/vim-mustache-handlebars.git
+[submodule ".vim/bundle/dash.vim"]
+	path = .vim/bundle/dash.vim
+	url = https://github.com/rizzatti/dash.vim
