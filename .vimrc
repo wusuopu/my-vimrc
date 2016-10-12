@@ -85,7 +85,7 @@ Plugin 'python.vim'
 "Plugin 'python_check_syntax.vim'
 "Plugin 'python_fn.vim'
 "	文件浏览器，NerdTree命令
-Plugin 'The-NERD-tree'
+Plugin 'nerdtree'
 "	很强大的文件浏览器,VE命令
 Plugin 'VimExplorer'
 "Plugin 'lookupfile'
