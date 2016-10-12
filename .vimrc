@@ -224,6 +224,8 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 " Gradle
 Plugin 'tfnico/vim-gradle'
+" vue.js
+Plugin 'darthmall/vim-vue'
 
 " PHP相关的插件
 if exists("g:php_dev_mode") && g:php_dev_mode

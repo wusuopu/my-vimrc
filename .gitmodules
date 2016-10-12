@@ -76,3 +76,6 @@
 [submodule ".vim/bundle/dash.vim"]
 	path = .vim/bundle/dash.vim
 	url = https://github.com/rizzatti/dash.vim
+[submodule ".vim/bundle/vim-vue"]
+	path = .vim/bundle/vim-vue
+	url = https://github.com/darthmall/vim-vue.git
