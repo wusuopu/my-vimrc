@@ -16,7 +16,9 @@ class ${1:Name} extends Component {
 	}
 
 	render() {
-		$5
+		return (
+			$5
+		);
 	}
 }
 endsnippet
@@ -44,14 +46,14 @@ componentDidMount() {
 }
 endsnippet
 
-snippet "cwum" "componentWillUnmount" r
-componentWillUnmount() {
+snippet "cwrp" "componentWillReceiveProps" r
+componentWillReceiveProps() {
 	$1
 }
 endsnippet
 
-snippet "cdum" "componentDidUnMount" r
-componentDidUnMount() {
+snippet "scud" "shouldComponentUpdate" r
+shouldComponentUpdate() {
 	$1
 }
 endsnippet
@@ -68,15 +70,17 @@ componentDidUpdate() {
 }
 endsnippet
 
-snippet "cwrp" "componentWillReceiveProps" r
-componentWillReceiveProps() {
+snippet "cwum" "componentWillUnmount" r
+componentWillUnmount() {
 	$1
 }
 endsnippet
 
-snippet "scud" "shouldComponentUpdate" r
-shouldComponentUpdate() {
+snippet "render" "render" r
+render() {
 	$1
+	return (
+	);
 }
 endsnippet
 

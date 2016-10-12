@@ -1,0 +1,61 @@
+snippet "var" "define variable" r
+var ${1:name} = ${2:value}
+endsnippet
+
+snippet "let" "define constant" r
+let ${1:name} = ${2:value}
+endsnippet
+
+snippet "imp" "import <Module>" r
+import ${1:Foundation}
+$0
+endsnippet
+
+snippet "fun" "define function" r
+func ${1:name}(${2:arguments}) -> ${3:reval} {
+	${4:body}
+}
+${0}
+endsnippet
+
+snippet "enum" "define Enum" r
+enum ${1:name} {
+	case ${2}
+}
+$0
+endsnippet
+
+snippet "struct" "define struct" r
+struct ${1:name} {
+	${2}
+}
+$0
+endsnippet
+
+snippet "class" "define class" r
+class ${1:name} {
+	${2}
+}
+$0
+endsnippet
+
+snippet "switch" "switch statement" r
+switch ${1:variable} {
+	${2:case}
+	default:
+		${3}
+}
+${0}
+endsnippet
+
+snippet "if" "if statement" r
+if ${1:expr} {
+	${2:body}
+}
+${0}
+endsnippet
+
+snippet "print" "print something" r
+print("${1}")
+$0
+endsnippet
