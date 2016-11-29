@@ -187,6 +187,7 @@ Plugin 'Shougo/unite.vim'
 "Plugin 'myyoudao_dict'
 "Plugin 'myweibo'
 "Plugin 'wosuopu/manual_search.vim'     " 与 macvim 不兼容
+
 " coffescript
 Plugin 'kchmck/vim-coffee-script'
 " Plugin 'carlosvillu/coffeScript-VIM-Snippets'
@@ -226,6 +227,10 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tfnico/vim-gradle'
 " vue.js
 Plugin 'darthmall/vim-vue'
+" 自动对齐的工具
+Plugin 'junegunn/vim-easy-align'
+" 自动补全括号
+Plugin 'Raimondi/delimitMate'
 
 " PHP相关的插件
 if exists("g:php_dev_mode") && g:php_dev_mode
@@ -542,21 +547,6 @@ nmap <F8> :reg<CR>
 nmap <F9>on :setlocal spell spelllang=en_us<CR>
 nmap <F9>off :setlocal nospell<CR>
 
-if has("gui_running")
-  inoremap <A-"> ""<Left>
-  inoremap <A-'> ''<Left>
-  inoremap <A-(> ()<Left>
-  inoremap <A-[> []<Left>
-  inoremap <A-{> {}<Left>
-  inoremap <A-<> <><Left>
-else
-  inoremap "<Space> ""<Left>
-  inoremap '<Space> ''<Left>
-  inoremap (<Space> ()<Left>
-  inoremap [<Space> []<Left>
-  inoremap {<Space> {}<Left>
-endif
-""inoremap <<Space> <><Left>
 nmap f zr
 nmap F zm
 nmap <F3> za
@@ -666,17 +656,6 @@ function! SwitchAutoChdir()
     execute "set autochdir"
   endif
 endfunction
-
-" 文档目录设置
-let g:php_manual_dir_path = $HOME . "/Book/Refernce/php/php-chunked-xhtml/"
-let g:php_symfony2_manual_dir_path = $HOME . "/Book/Refernce/php/api.symfony.com/2.4/"
-let g:php_symfony2_api_manual_dir_path = $HOME . "/Book/Refernce/php/api.symfony.com/2.4/"
-let g:python2_manual_dir_path = $HOME . "/Book/Refernce/Book/python-2.7.4-docs-html/"
-let g:python3_manual_dir_path = $HOME . "/Book/Refernce/Book/python-3.3.3-docs-html/"
-let g:ruby_core_manual_dir_path = $HOME . "/Book/Refernce/Ruby/ruby_2_1_1_core/"
-let g:ruby_stdlib_manual_dir_path = $HOME . "/Book/Refernce/Ruby/ruby_2_1_1_stdlib/"
-
-command! -nargs=0 ManualRails3 :W3mTab file:///home/lcj/.local/share/zeal/docsets/Ruby_on_Rails_3.docset/Contents/Resources/Documents/guides.rubyonrails.org/v3.2.21/index.html
 
 "let g:loaded_syntastic_javascript_jshint_checker = 1
 "let g:loaded_syntastic_javascript_jslint_checker = 1
