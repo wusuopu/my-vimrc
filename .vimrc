@@ -213,8 +213,15 @@ Plugin 'xsbeats/vim-blade'
 Plugin 'slim-template/vim-slim'
 " Rust
 Plugin 'rust-lang/rust.vim'
+"Yet Another JavaScript Syntax
+Plugin 'othree/yajs.vim'
+Plugin 'othree/es.next.syntax.vim'
+Plugin 'styled-components/vim-styled-components'
 " jsx
-"Plugin 'mxw/vim-jsx'
+Plugin 'mxw/vim-jsx'
+Plugin 'pangloss/vim-javascript'
+
+Plugin 'hail2u/vim-css3-syntax'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rvm'
 " Swift
@@ -255,6 +262,8 @@ if exists("g:php_dev_mode") && g:php_dev_mode
 
   let g:phpcomplete_index_composer_command = 'composer'
 end
+" 代码格式化插件
+Plugin 'sbdchd/neoformat'
 
 call vundle#end()   " Vundle 初始化完成
 
@@ -398,6 +407,8 @@ au BufNewFile,BufRead *.rs set ft=rust
 au BufRead,BufNewFile *.md setlocal filetype=markdown
 au BufNewFile,BufRead *.es6 set ft=javascript
 
+au VimEnter * if &diff | execute 'windo set wrap' | endif
+
 "nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-_>c :cs find c <C-R>=expand("<cword>")<CR><CR>
@@ -408,9 +419,11 @@ au BufNewFile,BufRead *.es6 set ft=javascript
 "nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 noremap <F4> :NERDTreeToggle<CR>
+noremap ;l :NERDTreeToggle<CR>
 "noremap <F4> :VE<CR><CR>
 noremap <F6> :TagbarToggle<CR>
 noremap <C-F4> :TagbarToggle<CR>
+let g:tagbar_ctags_bin = "/usr/local/bin/ctags"
 
 "AutoComplPop设置
 let g:acp_enableAtStartup = 0    "取消运行启用
@@ -661,6 +674,10 @@ endfunction
 "let g:loaded_syntastic_javascript_jslint_checker = 1
 "let g:loaded_syntastic_javascript_jsxhint_checker = 1
 "let g:syntastic_javascript_eslint_conf = "./.eslintrc"
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers = ['eslint', 'flow']
+
+let g:jsx_ext_required = 0
+let g:javascript_plugin_jsdoc = 1   " js支持jsdoc注释
+let g:javascript_plugin_flow = 1    " js支持flow语法
 
 let g:vimshell_editor_command = 'vim'

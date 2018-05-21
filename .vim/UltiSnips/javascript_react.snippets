@@ -1,10 +1,10 @@
 snippet "class" "class define" r
 class ${1:Name} extends Component {
 	constructor(props) {
-		super(props);
+		super(props)
 		this.state = {
 			$2
-		};
+		}
 	}
 
 	static propTypes = {
@@ -18,7 +18,7 @@ class ${1:Name} extends Component {
 	render() {
 		return (
 			$5
-		);
+		)
 	}
 }
 endsnippet
@@ -80,7 +80,7 @@ snippet "render" "render" r
 render() {
 	$1
 	return (
-	);
+	)
 }
 endsnippet
 
@@ -145,22 +145,22 @@ snippet "<Views" "View with style" r
 endsnippet
 
 snippet "rnNewComponent" "create a new Component" r
-'use strict';
+'use strict'
 
-const React = require('react-native');
+const React = require('react-native')
 const {
   StyleSheet,
   Text,
   View,
-} = React;
+} = React
 
 const ${1:name}  = React.createClass({
   render() {
     return (
       $0
-    );
+    )
   }
-});
+})
 
-module.exports = $1;
+module.exports = $1
 endsnippet

@@ -91,3 +91,18 @@
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
+[submodule ".vim/bundle/neoformat"]
+	path = .vim/bundle/neoformat
+	url = https://github.com/sbdchd/neoformat
+[submodule ".vim/bundle/yajs.vim"]
+	path = .vim/bundle/yajs.vim
+	url = https://github.com/othree/yajs.vim
+[submodule ".vim/bundle/es.next.syntax.vim"]
+	path = .vim/bundle/es.next.syntax.vim
+	url = https://github.com/othree/es.next.syntax.vim
+[submodule ".vim/bundle/vim-styled-components"]
+	path = .vim/bundle/vim-styled-components
+	url = https://github.com/styled-components/vim-styled-components
+[submodule ".vim/bundle/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
