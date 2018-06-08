@@ -246,12 +246,12 @@ if exists("g:php_dev_mode") && g:php_dev_mode
   " https://github.com/shawncplus/phpcomplete.vim/wiki/Patched-ctags
   " 需要编译安装 ctags-better-php-parser
   " 然后在项目目录执行命令： ctags -R --fields=+aimS --languages=php
-  Plugin 'shawncplus/phpcomplete.vim'
+  " Plugin 'shawncplus/phpcomplete.vim'
   " 安装 composer.phar
   " curl -s https://getcomposer.org/installer | php
   " 安装依赖包： php composer.phar install
-  Plugin 'm2mdas/phpcomplete-extended'
-  Plugin 'm2mdas/phpcomplete-extended-symfony'
+  " Plugin 'm2mdas/phpcomplete-extended'
+  " Plugin 'm2mdas/phpcomplete-extended-symfony'
   " vimshell
   Plugin 'Shougo/neocomplcache'
   Plugin 'Shougo/vimshell.vim'
